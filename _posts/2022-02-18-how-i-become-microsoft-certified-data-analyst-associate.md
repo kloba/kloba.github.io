@@ -57,8 +57,8 @@ Here are some more tips that may come in handy:
 
 I could have ended this piece here, but I also want to recommend these courses on Udemy if you prefer video format:
 
-- [**DA-100, PL-300 certification Analyzing Data with MS Power BI**](https://www.udemy.com/course/70-778-analyzing-and-visualizing-data-with-power-bi/) - $ 15.99
-- [**Microsoft Power BI Certification: DA-100 | PL-300 Exam Prep**](https://www.udemy.com/course/microsoft-power-bi-certification-da-100-exam-prep/) - $ 15.99
+- [DA-100, PL-300 certification Analyzing Data with MS Power BI](https://www.udemy.com/course/70-778-analyzing-and-visualizing-data-with-power-bi/) - $ 15.99
+- [Microsoft Power BI Certification: DA-100 | PL-300 Exam Prep](https://www.udemy.com/course/microsoft-power-bi-certification-da-100-exam-prep/) - $ 15.99
 
 What’s more, here are some YouTube channels that may help you with this:
 

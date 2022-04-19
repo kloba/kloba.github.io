@@ -1,7 +1,7 @@
 # Setup
 title:               Taras Kloba
-tagline:             'Taras Kloba'
-description:         'Personal blog'
+tagline:             "Taras Kloba"
+description:         'data engineering blog'
 url:                 https://kloba.github.io
 baseurl:             ""
 paginate:            5

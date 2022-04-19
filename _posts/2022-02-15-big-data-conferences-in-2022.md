@@ -11,7 +11,6 @@ friends and try your hand at presenting on a topic. Wouldn't that be
 cool? So, we've composed a list of Big Data conferences in 2022.
 
 ![](/imgs/image1.jpg)
-
 **MS Stage**
 
 International tech event on the Microsoft Technologies stack. Register
@@ -28,7 +27,6 @@ the event](https://msstage.com/) to register and get acquainted with
 program and speakers.
 
 ![](/imgs/image2.jpg)
-
 **Kafka Summit London 2022**
 
 Kafka Summit is the premier event for developers, architects, data
@@ -49,7 +47,6 @@ Cost:
 -   On-site---£525 (approx. \$700)
 
 ![](/imgs/image3.jpg)
-
 **Big Data Technology Warsaw Summit**
 
 It will be the 8th edition of the annual conference Big Data Technology
@@ -73,7 +70,6 @@ Cost:
 -   Professional---1455 PLN (approx. \$360)
 
 ![](/imgs/image4.jpg)
-
 **Data + AI Summit 2022**
 
 Data + AI Summit is the global event for the data community, and this
@@ -104,7 +100,6 @@ Cost:
 -   Keynote + Expo only pass (limited quantities)---\$350
 
 ![](/imgs/image5.jpg)
-
 **Google Cloud Next '22**
 
 Google Cloud Next '22 is a part of digital Google Cloud Summit series.
@@ -124,7 +119,6 @@ It is too early to determine all the details. So, check back [the
 website of the event](https://cloud.withgoogle.com/next) for updates.
 
 ![](/imgs/image6.jpg)
-
 **Coalesce 2022 by dbt Labs**
 
 This is a conference dedicated to the advancement and practice of
@@ -144,7 +138,6 @@ updates to obtain timely information about registration and call for
 speakers.
 
 ![](/imgs/image7.jpg)
-
 **AWS re:Invent 2022**
 
 Hear directly from AWS leaders as they share the latest advances in AWS
@@ -156,7 +149,6 @@ the details to be announced. So, check back [the website of the
 event](https://reinvent.awsevents.com/) for updates.
 
 ![](/imgs/image8.jpg)
-
 **Big Data & AI World**
 
 Big Data & AI World brings together thousands of data and AI innovators,
@@ -170,7 +162,6 @@ Find more information about the conference on the [Big Data & AI
 World](https://www.bigdataworld.com/welcome) website.
 
 ![](/imgs/image9.jpg)
-
 **Microsoft Ignite**
 
 The event has ended, but your opportunities to learn, connect, and

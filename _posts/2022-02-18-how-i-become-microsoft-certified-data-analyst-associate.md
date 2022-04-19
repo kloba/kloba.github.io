@@ -5,6 +5,8 @@ title: 'How I became Microsoft Certified Data Analyst Associate: key tips'
 
 My name is Taras Kloba, and I am a Microsoft Certified Trainer with over 12 years of experience working with data. Recently, I’ve passed the DA-100: Analyzing Data with Microsoft Power BI exam and received a certificate confirming the title of Microsoft Data Analyst Associate. This certificate proves a certain level of competence of a data analysis specialist. Namely, a specialist of this level should understand data warehousing, data processing, visualization, preparation and transformation, design and construction of data models. After I shared the news about the certification on social media, many people started asking about the best approaches to exam preparation and the purpose of this certificate. That’s why I decided to share my experience.
 
+![](/imgs/Aspose.Words.e0f8d698-05f0-4ce3-84a4-16942aeb2096.002.jpeg)
+
 **WHY DID I DECIDE TO GET CERTIFIED?**
 
 There is an impressive report from [**Nigel Frank's Career and Hiring Guide**](https://www.nigelfrank.com/microsoft-365-azure-careers-and-hiring-guide/), according to which 48% of respondents say that their salary increased by an average of 19% after they received Microsoft Azure certification. Clearly, this can be a significant motivating factor for certification. What’s more, 55% of respondents say that this certification allowed them to test their skills in working with Azure products, and 49% of respondents add that the certificates became their advantage in the IT market.
@@ -67,8 +69,5 @@ What’s more, here are some YouTube channels that may help you with this:
 1. [**Guy in a Cube**](https://www.youtube.com/c/GuyinaCube)
 
 For me, this certification turned out to be quite easy, and I spent no more than 20 hours on preparation (however, keep in mind that I have 10+ years of practical experience in the BI field).
-
-![](/imgs/Aspose.Words.e0f8d698-05f0-4ce3-84a4-16942aeb2096.002.jpeg)
-
 
 Don’t stop after getting certified, keep maintaining your skills and gaining new knowledge.

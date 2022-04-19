@@ -146,4 +146,4 @@ Microsoft Ignite is a conference that covers such topics as:
 - Microsoft Azure
 - Mobile devices
 
-Gaining knowledge brings more strength and growth. So, keep learning, keep growing! The Big Data and Analytics Competence Development Team is always here to support your initiatives, especially in these tough times. If you have in mind an event worth attending, please share by filling in [this form](https://forms.office.com/pages/responsepage.aspx?id=WcZRbFKdr0GB993hY4DoE7p4eEs-BIxCrN3nDUWA11dUMENRWDlLQTVEQVo0QlNPRkNaMkFHT1hGQyQlQCN0PWcu).
+Gaining knowledge brings more strength and growth. So, keep learning, keep growing! 

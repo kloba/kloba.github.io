@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_tmp
 title: About
 ---
 

@@ -1,11 +1,11 @@
 # Setup
-title:               Taras Kloba
+title:               "Taras Kloba's"
 tagline:             'data engineering blog'
-description:         'My name is Taras Kloba, and I am a Big Data Engineering Manager at SoftServe. I teach Software Engineers like you how to become a Data Engineers.'
+description:         'My name is Taras Kloba, and I am a Big Data Engineering Manager at SoftServe. I teach Software Engineers like you how to become Data Engineers.'
 url:                 https://kloba.github.io
 baseurl:             ""
 paginate:            5
-permalink:           'pretty'
+permalink:           '/:title'
 
 # About/contact
 author:

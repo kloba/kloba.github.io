@@ -2,7 +2,7 @@
 title:               Taras Kloba
 tagline:             'Taras Kloba'
 description:         'Personal blog'
-url:                 https://klioba.com
+url:                 https://kloba.github.io
 baseurl:             ""
 paginate:            5
 permalink:           '/:title'

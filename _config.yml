@@ -3,9 +3,9 @@ title:               Taras Kloba
 tagline:             'Taras Kloba'
 description:         'Personal blog'
 url:                 https://klioba.com
-baseurl:             ''
+baseurl:             'https://kloba.github.io/'
 paginate:            5
-permalink:           none
+permalink:           pretty
 
 # About/contact
 author:

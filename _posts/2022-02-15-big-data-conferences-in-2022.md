@@ -47,9 +47,7 @@ Find information about agenda, speakers, activities and other details
 event](https://www.kafka-summit.org/events/kafka-summit-london-2022/about).
 
 Cost:
-
 -   Standard---£495 (approx. \$660) (until April 24, 2022)
-
 -   On-site---£525 (approx. \$700)
 
 ![](/imgs/image3.jpg){width="6.9in"
@@ -73,11 +71,8 @@ Find information about program, speakers, and other details [on the
 website of the event](https://bigdatatechwarsaw.eu/).
 
 Cost:
-
 -   Online Expo---Free
-
 -   Premium---545 PLN (approx. \$130)
-
 -   Professional---1455 PLN (approx. \$360)
 
 ![](/imgs/image4.jpg){width="6.9in"
@@ -91,16 +86,11 @@ year it will be back in San Francisco.
 Data scientists, data engineers, analysts, developers, researchers and
 ML practitioners all attend Summit to learn from the world's leading
 experts on topics like:
-
 -   Best practices and use cases for Apache Spark™, Delta Lake, MLflow,
     PyTorch, TensorFlow, Transformers.
-
 -   Data engineering, including streaming architectures.
-
 -   SQL analytics and BI using data warehouses and data lakes.
-
 -   Data science, including the Python ecosystem.
-
 -   Machine learning and deep learning applications.
 
 Data + AI Summit is scheduled for **June 27**--**30**, 2022 and it will
@@ -111,15 +101,10 @@ the website of the
 event](https://databricks.com/dataaisummit/north-america-2022).
 
 Cost:
-
 -   Virtual Pass---Free
-
 -   Full conference all-access pass (Until April 27)---\$950
-
 -   Full conference all-access pass (After April 27)---\$1150
-
 -   Full conference all-access pass (June 27-30)---\$1550
-
 -   Keynote + Expo only pass (limited quantities)---\$350
 
 ![](/imgs/image5.jpg){width="6.9in"
@@ -150,13 +135,9 @@ height="3.8826388888888888in"}
 
 This is a conference dedicated to the advancement and practice of
 analytics engineering. You'll have the opportunity to:
-
 -   Attend sessions presented by DBT users and contributors.
-
 -   Learn how to use tools that are compatible with DBT.
-
 -   Meet teams doing great things with data.
-
 -   Take part in discussions on common analytics problems & solutions.
 
 The event is scheduled for **October 17**--**21**, 2022 and it will be
@@ -213,35 +194,20 @@ Lync Conference. Microsoft Ignite brings together Microsoft technical
 communities, IT professionals, customers, and partners.
 
 Microsoft Ignite is a conference that covers such topics as:
-
 -   Virtualization
-
 -   Project management
-
 -   Cloud strategies and technologies
-
 -   Windows
-
 -   Data management
-
 -   SQL Server
-
 -   Compliance and standards
-
 -   SharePoint
-
 -   Enterprise and business
-
 -   Data centers
-
 -   Microsoft Office
-
 -   Internet of Things
-
 -   Security
-
 -   Microsoft Azure
-
 -   Mobile devices
 
 Gaining knowledge brings more strength and growth. So, keep learning,

@@ -2,7 +2,7 @@
 title:               "Taras Kloba's"
 tagline:             'data engineering blog'
 description:         'My name is Taras Kloba, and I am a Big Data Engineering Manager at SoftServe. I teach Software Engineers like you how to become Data Engineers.'
-url:                 https://kloba.github.io
+url:                 https://kloba.com
 baseurl:             ""
 paginate:            5
 permalink:           '/:title'

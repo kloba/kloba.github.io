@@ -17,6 +17,8 @@ The registration is **free**. You will get access to the stream, conference reco
 
 ![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
 
+<!--more-->
+
 **Kafka Summit London 2022**
 
 Kafka Summit is the premier event for developers, architects, data engineers, DevOps professionals, and anyone else who wants to learn about streaming data. It brings the Apache Kafka community together to share best practices, learn how to build next-generation systems, and discuss the future of streaming technologies.

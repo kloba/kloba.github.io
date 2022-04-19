@@ -1,7 +1,7 @@
 # Setup
 title:               Taras Kloba
-tagline:             "Taras Kloba"
-description:         'data engineering blog'
+tagline:             'data engineering blog'
+description:         'My name is Taras Kloba, and I am a Big Data Engineering Manager at SoftServe. I teach Software Engineers like you how to become a Data engineers.'
 url:                 https://kloba.github.io
 baseurl:             ""
 paginate:            5

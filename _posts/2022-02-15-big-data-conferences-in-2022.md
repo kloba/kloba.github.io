@@ -10,8 +10,7 @@ same passion as you. Moreover, it sounds like a nice opportunity to make
 friends and try your hand at presenting on a topic. Wouldn't that be
 cool? So, we've composed a list of Big Data conferences in 2022.
 
-![](/imgs/image1.jpg){width="6.9in"
-height="3.88125in"}
+![](/imgs/image1.jpg)
 
 **MS Stage**
 
@@ -28,8 +27,7 @@ conference record, and presentations of speakers. Go to [the website of
 the event](https://msstage.com/) to register and get acquainted with
 program and speakers.
 
-![](/imgs/image2.jpg){width="6.9in"
-height="3.884027777777778in"}
+![](/imgs/image2.jpg)
 
 **Kafka Summit London 2022**
 
@@ -50,8 +48,7 @@ Cost:
 -   Standard---£495 (approx. \$660) (until April 24, 2022)
 -   On-site---£525 (approx. \$700)
 
-![](/imgs/image3.jpg){width="6.9in"
-height="3.8826388888888888in"}
+![](/imgs/image3.jpg)
 
 **Big Data Technology Warsaw Summit**
 
@@ -75,8 +72,7 @@ Cost:
 -   Premium---545 PLN (approx. \$130)
 -   Professional---1455 PLN (approx. \$360)
 
-![](/imgs/image4.jpg){width="6.9in"
-height="3.884027777777778in"}
+![](/imgs/image4.jpg)
 
 **Data + AI Summit 2022**
 
@@ -107,8 +103,7 @@ Cost:
 -   Full conference all-access pass (June 27-30)---\$1550
 -   Keynote + Expo only pass (limited quantities)---\$350
 
-![](/imgs/image5.jpg){width="6.9in"
-height="3.890972222222222in"}
+![](/imgs/image5.jpg)
 
 **Google Cloud Next '22**
 
@@ -128,8 +123,7 @@ The event is scheduled for **October 11**-**13**, 2022.
 It is too early to determine all the details. So, check back [the
 website of the event](https://cloud.withgoogle.com/next) for updates.
 
-![](/imgs/image6.jpg){width="6.9in"
-height="3.8826388888888888in"}
+![](/imgs/image6.jpg)
 
 **Coalesce 2022 by dbt Labs**
 
@@ -149,8 +143,7 @@ event](https://coalesce.getdbt.com/#coalesceForm) and subscribe for
 updates to obtain timely information about registration and call for
 speakers.
 
-![](/imgs/image7.jpg){width="6.9in"
-height="3.884027777777778in"}
+![](/imgs/image7.jpg)
 
 **AWS re:Invent 2022**
 
@@ -162,8 +155,7 @@ The event is scheduled for **November 28**--**December 2**, 2022. All
 the details to be announced. So, check back [the website of the
 event](https://reinvent.awsevents.com/) for updates.
 
-![](/imgs/image8.jpg){width="6.9in"
-height="3.8826388888888888in"}
+![](/imgs/image8.jpg)
 
 **Big Data & AI World**
 
@@ -177,8 +169,7 @@ Big Data & AI World 2023, taking place once again at ExCeL London on
 Find more information about the conference on the [Big Data & AI
 World](https://www.bigdataworld.com/welcome) website.
 
-![](/imgs/image9.jpg){width="6.9in"
-height="3.875in"}
+![](/imgs/image9.jpg)
 
 **Microsoft Ignite**
 

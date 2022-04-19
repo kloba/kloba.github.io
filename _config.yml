@@ -5,7 +5,7 @@ description:         'My name is Taras Kloba, and I am a Big Data Engineering Ma
 url:                 https://kloba.github.io
 baseurl:             ""
 paginate:            5
-permalink:           '/:title'
+permalink:           'pretty'
 
 # About/contact
 author:

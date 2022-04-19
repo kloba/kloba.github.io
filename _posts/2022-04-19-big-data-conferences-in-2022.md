@@ -5,7 +5,7 @@ title: Big Data conferences in 2022
 
 What if we can have a single list of upcoming conferences and an opportunity to attend them? It would be a great way of learning more about Big Data and getting in touch with professionals who share the same passion as you. Moreover, it sounds like a nice opportunity to make friends and try your hand at presenting on a topic. Wouldn’t that be cool? So, we’ve composed a list of Big Data conferences in 2022.
 
-![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.001.jpeg)
+![](./imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.001.jpeg)
 
 **MS Stage**
 
@@ -15,7 +15,7 @@ The event is scheduled for **April 1**, 2022 and will be hosted **online**.
 
 The registration is **free**. You will get access to the stream, conference record, and presentations of speakers. Go to [the website of the event](https://msstage.com/) to register and get acquainted with program and speakers.
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
+![](imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
 
 **Kafka Summit London 2022**
 
@@ -30,7 +30,7 @@ Cost:
 - Standard—£495 (approx. $660) (until April 24, 2022)
 - On-site—£525 (approx. $700)
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
 
 **Big Data Technology Warsaw Summit**
 

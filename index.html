@@ -16,8 +16,8 @@ title: Home
     {% if post.content | number_of_words > 120 %}
       {{ post.content | truncatewords:120 }}
     {% endif %}
-  </div>
     <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
+  </div>
   {% endfor %}
 </div>
 

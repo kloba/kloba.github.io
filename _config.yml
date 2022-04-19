@@ -5,7 +5,7 @@ description:         'Personal blog'
 url:                 https://klioba.com
 baseurl:             ""
 paginate:            5
-permalink:           pretty
+permalink:           '/:title'
 
 # About/contact
 author:

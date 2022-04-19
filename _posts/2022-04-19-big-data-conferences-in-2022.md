@@ -5,7 +5,7 @@ title: Big Data conferences in 2022
 
 What if we can have a single list of upcoming conferences and an opportunity to attend them? It would be a great way of learning more about Big Data and getting in touch with professionals who share the same passion as you. Moreover, it sounds like a nice opportunity to make friends and try your hand at presenting on a topic. Wouldn’t that be cool? So, we’ve composed a list of Big Data conferences in 2022.
 
-![](./imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.001.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.001.jpeg)
 
 **MS Stage**
 
@@ -15,7 +15,7 @@ The event is scheduled for **April 1**, 2022 and will be hosted **online**.
 
 The registration is **free**. You will get access to the stream, conference record, and presentations of speakers. Go to [the website of the event](https://msstage.com/) to register and get acquainted with program and speakers.
 
-![](imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
 
 **Kafka Summit London 2022**
 
@@ -46,7 +46,7 @@ Cost:
 - Premium—545 PLN (approx. $130)
 - Professional—1455 PLN (approx. $360)
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
 
 **Data + AI Summit 2022**
 
@@ -72,7 +72,7 @@ Cost:
 - Full conference all-access pass (June 27-30)—$1550
 - Keynote + Expo only pass (limited quantities)—$350
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.004.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.004.jpeg)
 
 **Google Cloud Next ’22**
 
@@ -84,7 +84,7 @@ The event is scheduled for **October 11**-**13**, 2022.
 
 It is too early to determine all the details. So, check back [the website of the event](https://cloud.withgoogle.com/next) for updates.
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
 
 **Coalesce 2022 by dbt Labs**
 
@@ -99,7 +99,7 @@ The event is scheduled for **October 17**–**21**, 2022 and it will be organize
 
 All the details to be announced. So, visit [the website of the event](https://coalesce.getdbt.com/#coalesceForm) and subscribe for updates to obtain timely information about registration and call for speakers.
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.002.jpeg)
 
 **AWS re:Invent 2022**
 
@@ -107,7 +107,7 @@ Hear directly from AWS leaders as they share the latest advances in AWS technolo
 
 The event is scheduled for **November 28**–**December 2**, 2022. All the details to be announced. So, check back [the website of the event](https://reinvent.awsevents.com/) for updates.
 
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.003.jpeg)
 
 **Big Data & AI World**
 
@@ -118,7 +118,7 @@ Big Data & AI World 2023, taking place once again at ExCeL London on **March 8**
 Find more information about the conference on the [Big Data & AI World](https://www.bigdataworld.com/welcome) website.
 
 -----
-![](Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.005.jpeg)
+![](/imgs/Aspose.Words.69bd6438-b115-4b0f-b38c-10ae4c5f243e.005.jpeg)
 
 **Microsoft Ignite**
 

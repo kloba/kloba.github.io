@@ -123,9 +123,9 @@ the certification of cloud providers mentioned earlier.
 [**Lakehouse. Databricks Data Engineer Associate and
 Professional**](https://databricks.com/learn/certification#data-engineer)
 
-<p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image5.png" style="float: left; padding-left: 10px;" />
-  <img src="/imgs/top-8-data-engineering-certifications/image6.png" />
+<div id="images" style="text-align:center;">
+  <img src="/imgs/top-8-data-engineering-certifications/image5.png" style="display: inline-block; margin-left: auto; margin-right: auto;" />
+  <img src="/imgs/top-8-data-engineering-certifications/image6.png" style="display: inline-block; margin-left: auto; margin-right: auto;" />
 </p>
 
 This certification is intended for those who use the Databricks

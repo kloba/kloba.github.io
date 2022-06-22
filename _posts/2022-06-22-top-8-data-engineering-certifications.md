@@ -140,7 +140,7 @@ Professional**](https://databricks.com/learn/certification#data-engineer)
 <div id="images" style="text-align:center;">
   <img src="/imgs/top-8-data-engineering-certifications/image5.png" style="display: inline-block; margin-left: auto; margin-right: auto;" />
   <img src="/imgs/top-8-data-engineering-certifications/image6.png" style="display: inline-block; margin-left: auto; margin-right: auto;" />
-</p>
+</div>
 
 This certification is intended for those who use the Databricks
 Lakehouse platform and related tools, such as Apache Spark, Delta Lake,

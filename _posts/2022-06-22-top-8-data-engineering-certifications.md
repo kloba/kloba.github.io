@@ -10,8 +10,6 @@ other large companies also use this approach. Thus, I have decided to
 prepare a list of in-demand certifications for 2022 that may help you
 get a job in the field of Data Engineering.
 
-![](/imgs/top-8-data-engineering-certifications/image1.png)
-
 Let\'s consider the main advantages of hiring certified specialists from
 the perspective of service companies:
 
@@ -34,12 +32,16 @@ advantage that stands you out from other candidates, but still, there is
 a lot of work that remains to be done to gain practical experience.
 
 Most companies are already using cloud services or thinking about future
-migration to the cloud. According to an analysis conducted by Offshore
-Technology in 2022, service companies include cloud computing skills in
+migration to the cloud. According to an analysis conducted by [Offshore
+Technology in 2022](https://www.offshore-technology.com/cloud-in-oil-gas/), service companies include cloud computing skills in
 57.5% of vacancies compared to 43% in 2021. Our analysis of Data
 Engineering related job descriptions for 2021 and 2022 also shows that
 the requirements for knowledge of cloud service providers like AWS,
 Azure, and GCP are listed even more frequently.
+
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image1.png)
+</p>
 
 That\'s why I would recommend you to pay greater attention to the
 professional certifications of the most popular cloud providers.
@@ -47,7 +49,9 @@ professional certifications of the most popular cloud providers.
 [Amazon Web Services (AWS) Certified Big Data ---
 Specialty](https://aws.amazon.com/certification/certified-big-data-specialty/)
 
-![](/imgs/top-8-data-engineering-certifications/image2.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image2.png)
+</p>
 
 AWS Certified Big Data Specialty certification is designed for those who
 perform engineering tasks involving enormous amounts of data and have at
@@ -74,7 +78,9 @@ least two years of experience in using AWS technologies.
     [Google Cloud Professional Data
     Engineer](https://cloud.google.com/certification/data-engineer)
 
-![](/imgs/top-8-data-engineering-certifications/image3.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image3.png)
+</p>
 
 The Data Engineer provides decision-making by collecting, converting,
 and publishing data. He must design, implement, put into practice,
@@ -107,7 +113,9 @@ use, deploy, and continuously train existing machine learning models.
 [Microsoft Certified: Azure Data Engineer Associate ---
 DP-203](https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203)
 
-![](/imgs/top-8-data-engineering-certifications/image4.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image4.png)
+</p>
 
 Data engineers specializing in the Azure platform help understand data
 through research. They implement and maintain secure and compatible data
@@ -135,8 +143,10 @@ the certification of cloud providers mentioned earlier.
 [Lakehouse. Databricks Data Engineer Associate and
 Professional](https://databricks.com/learn/certification#data-engineer)
 
-![](/imgs/top-8-data-engineering-certifications/image5.png)
-![](/imgs/top-8-data-engineering-certifications/image6.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image5.png)
+  ![](/imgs/top-8-data-engineering-certifications/image6.png)
+</p>
 
 This certification is intended for those who use the Databricks
 Lakehouse platform and related tools, such as Apache Spark, Delta Lake,
@@ -155,7 +165,9 @@ MLflow, Databricks CLI, and REST API.
 [SnowPro Advanced: Data
 Engineer](https://www.snowflake.com/certifications/)
 
-![](/imgs/top-8-data-engineering-certifications/image7.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image7.png)
+</p>
 
 This certification is suitable for engineers who have at least two years
 of working experience in data, including the use of Snowflake. To pass
@@ -196,7 +208,9 @@ Engineer.
 [Confluent Certified Developer for Apache
 Kafka®](https://www.confluent.io/certification/#faqs)
 
-![](/imgs/top-8-data-engineering-certifications/image9.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image9.png)
+</p>
 
 This certification is intended for developers and checks the knowledge
 of Confluent, Apache Kafka, and the entire Apache Kafka ecosystem.
@@ -215,7 +229,9 @@ IBM\'s
 [Data](https://www.edx.org/professional-certificate/ibm-data-engineering)
 Engineering Professional Certificate
 
-![](/imgs/top-8-data-engineering-certifications/image10.png)
+<p align="center">
+  ![](/imgs/top-8-data-engineering-certifications/image10.png)
+</p>
 
 The program developed by Coursera will help you start your career as a
 Data Engineer. You will learn how to use technology to solve big data

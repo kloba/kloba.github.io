@@ -3,6 +3,8 @@ layout: post
 title: Top 8 Data Engineering certifications to find a job
 ---
 
+![](/imgs/top-8-data-engineering-certifications/image1.png)
+
 My name is Taras Kloba, and I am a Big Data Competence Manager at
 SoftServe. Our recruiters regularly review the lists of newly certified
 professionals to find new potential candidates. There is no doubt that
@@ -38,8 +40,6 @@ Technology in 2022, service companies include cloud computing skills in
 Engineering related job descriptions for 2021 and 2022 also shows that
 the requirements for knowledge of cloud service providers like AWS,
 Azure, and GCP are listed even more frequently.
-
-![](/imgs/top-8-data-engineering-certifications/image1.png)
 
 That\'s why I would recommend you to pay greater attention to the
 professional certifications of the most popular cloud providers.

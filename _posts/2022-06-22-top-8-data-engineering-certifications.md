@@ -50,7 +50,7 @@ professional certifications of the most popular cloud providers.
 Specialty](https://aws.amazon.com/certification/certified-big-data-specialty/)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image2.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image2.png" />
 </p>
 
 AWS Certified Big Data Specialty certification is designed for those who
@@ -79,7 +79,7 @@ least two years of experience in using AWS technologies.
     Engineer](https://cloud.google.com/certification/data-engineer)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image3.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image3.png" />
 </p>
 
 The Data Engineer provides decision-making by collecting, converting,
@@ -114,7 +114,7 @@ use, deploy, and continuously train existing machine learning models.
 DP-203](https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image4.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image4.png" />
 </p>
 
 Data engineers specializing in the Azure platform help understand data
@@ -144,8 +144,8 @@ the certification of cloud providers mentioned earlier.
 Professional](https://databricks.com/learn/certification#data-engineer)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image5.png" wight="150px" />
-  <img src="/imgs/top-8-data-engineering-certifications/image6.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image5.png" />
+  <img src="/imgs/top-8-data-engineering-certifications/image6.png" />
 </p>
 
 This certification is intended for those who use the Databricks
@@ -166,7 +166,7 @@ MLflow, Databricks CLI, and REST API.
 Engineer](https://www.snowflake.com/certifications/)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image7.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image7.png" />
 </p>
 
 This certification is suitable for engineers who have at least two years
@@ -189,7 +189,7 @@ evaluate performance, and share data between cloud platforms.
 Engineer](https://www.cloudera.com/about/training/certification/cdhhdp-certification/ccp-data-engineer.html)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image8.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image8.png" />
 </p>
 
 An experienced engineer who can perform the basic tasks of data
@@ -211,7 +211,7 @@ Engineer.
 Kafka®](https://www.confluent.io/certification/#faqs)
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image9.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image9.png" />
 </p>
 
 This certification is intended for developers and checks the knowledge
@@ -232,7 +232,7 @@ IBM\'s
 Engineering Professional Certificate
 
 <p align="center">
-  <img src="/imgs/top-8-data-engineering-certifications/image10.png" wight="150px" />
+  <img src="/imgs/top-8-data-engineering-certifications/image10.png" />
 </p>
 
 The program developed by Coursera will help you start your career as a

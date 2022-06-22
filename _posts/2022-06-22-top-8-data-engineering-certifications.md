@@ -58,10 +58,15 @@ perform engineering tasks involving enormous amounts of data and have at
 least two years of experience in using AWS technologies.
 
 **Number of questions**: 65
+
 **Question types**: multiple answers, multiple-choice
+
 **Time limit**: 170 minutes
+
 **Cost**: \$300
+
 **Passing score**: 750 (out of 1000)
+
 **Prep recommendations**:
 -   A Cloud Guru --- [AWS Big Data Specialty Certification
     Course](https://acloudguru.com/course/aws-certified-big-data-specialty)
@@ -84,9 +89,13 @@ flexibility and portability of solutions. The Data Engineer must also
 use, deploy, and continuously train existing machine learning models.
 
 **Number of questions**: 50
+
 **Question types**: multiple answers, multiple-choice
+
 **Time limit**: 120 minutes
+
 **Cost**: \$200
+
 **Prep recommendations**:
 -   [Learning
     path](https://cloud.google.com/training/data-engineering-and-analytics#data-engineer-learning-path)
@@ -108,11 +117,16 @@ processing mechanisms using various tools and techniques. Such
 professionals use a variety of Azure services and programming languages
 to save and prepare purified and supplemented datasets for analysis.
 
-**Number of questions**: 40--60
+**Number of questions**: 40-60
+
 **Question types**: multiple answers, multiple-choice
+
 **Time limit**: 150 minutes
+
 **Cost**: \$165
+
 **Passing score**: 700 (out of 1000)
+
 **Prep recommendations**: [Azure for the Data
 Engineer](https://docs.microsoft.com/en-us/learn/paths/azure-for-the-data-engineer/)
 
@@ -133,9 +147,13 @@ Lakehouse platform and related tools, such as Apache Spark, Delta Lake,
 MLflow, Databricks CLI, and REST API.
 
 **Number of questions**: 60
+
 **Question types**: multiple choice
+
 **Time limit**: 120 minutes
+
 **Cost**: \$200
+
 **Passing score**: 70%
 
 [**SnowPro Advanced: Data Engineer**](https://www.snowflake.com/certifications/)
@@ -151,9 +169,13 @@ ability to retrieve data from APIs and data lakes, convert, replicate,
 evaluate performance, and share data between cloud platforms.
 
 **Number of questions**: 100
+
 **Question type**s: multiple answers, multiple-choice, true or false
+
 **Time limit**: 115 minutes
+
 **Cost**: \$375
+
 **Passing score**: 750 (out of 1000)
 
 [**Cloudera Certified Professional Data Engineer**](https://www.cloudera.com/about/training/certification/cdhhdp-certification/ccp-data-engineer.html)
@@ -167,10 +189,14 @@ acquisition, transformation, storage, and analysis in the Cloudera CDH
 environment will easily become a Cloudera Certified Professional Data
 Engineer.
 
-**Number of questions**: 5--10
+**Number of questions**: 5-10
+
 **Question types**: practical tasks
+
 **Time limit**: 240 minutes
+
 **Cost**: \$400
+
 **Passing score**: 70%
 
 [**Confluent Certified Developer for Apache Kafka**](https://www.confluent.io/certification/#faqs)
@@ -183,9 +209,13 @@ This certification is intended for developers and checks the knowledge
 of Confluent, Apache Kafka, and the entire Apache Kafka ecosystem.
 
 **Number of questions**: 60
+
 **Question types**: multiple choice
+
 **Time limit**: 90 minutes
+
 **Cost**: \$150
+
 **Passing score**: there are two options: Passed and Failed.
 
 [**IBM\'s Data Engineering Professional Certificate**](https://www.edx.org/professional-certificate/ibm-data-engineering)
@@ -201,9 +231,13 @@ test, and evaluate big data solutions. Upon completing this program, you
 will be supposed to take a 75-minute test to obtain a certificate.
 
 **Number of questions**: 53
+
 **Question type**s: multiple answers, multiple-choice, true or false
+
 **Time limit**: 75 minutes
+
 **Cost**: \$1076
+
 **Passing score**: 64%
 
 I am a certified specialist in Azure and GCP. Partially thanks to the

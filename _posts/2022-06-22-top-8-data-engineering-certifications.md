@@ -3,14 +3,14 @@ layout: post
 title: Top 8 Data Engineering certifications to find a job
 ---
 
-![](/imgs/top-8-data-engineering-certifications/image1.png)
-
 My name is Taras Kloba, and I am a Big Data Competence Manager at
 SoftServe. Our recruiters regularly review the lists of newly certified
 professionals to find new potential candidates. There is no doubt that
 other large companies also use this approach. Thus, I have decided to
 prepare a list of in-demand certifications for 2022 that may help you
 get a job in the field of Data Engineering.
+
+![](/imgs/top-8-data-engineering-certifications/image1.png)
 
 Let\'s consider the main advantages of hiring certified specialists from
 the perspective of service companies:

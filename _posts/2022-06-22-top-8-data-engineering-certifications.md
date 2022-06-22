@@ -46,8 +46,8 @@ Azure, and GCP are listed even more frequently.
 That\'s why I would recommend you to pay greater attention to the
 professional certifications of the most popular cloud providers.
 
-[Amazon Web Services (AWS) Certified Big Data ---
-Specialty](https://aws.amazon.com/certification/certified-big-data-specialty/)
+[**Amazon Web Services (AWS) Certified Big Data ---
+Specialty**](https://aws.amazon.com/certification/certified-big-data-specialty/)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image2.png" />
@@ -75,8 +75,8 @@ least two years of experience in using AWS technologies.
 -   Udemy --- [AWS Certified Big Data Specialty
     2020](https://www.udemy.com/course/aws-data-analytics/)
 
-    [Google Cloud Professional Data
-    Engineer](https://cloud.google.com/certification/data-engineer)
+
+[**Google Cloud Professional Data Engineer**](https://cloud.google.com/certification/data-engineer)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image3.png" />
@@ -110,8 +110,7 @@ use, deploy, and continuously train existing machine learning models.
     Engineer Professional
     Certificate](https://www.coursera.org/professional-certificates/gcp-data-engineering)
 
-[Microsoft Certified: Azure Data Engineer Associate ---
-DP-203](https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203)
+[**Microsoft Certified: Azure Data Engineer Associate - DP-203**](https://docs.microsoft.com/en-us/learn/certifications/exams/dp-203)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image4.png" />
@@ -140,8 +139,8 @@ There is a number of less popular Data Engineering certifications. I
 recommend getting them in case of a specific request and after passing
 the certification of cloud providers mentioned earlier.
 
-[Lakehouse. Databricks Data Engineer Associate and
-Professional](https://databricks.com/learn/certification#data-engineer)
+[**Lakehouse. Databricks Data Engineer Associate and
+Professional**](https://databricks.com/learn/certification#data-engineer)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image5.png" style="float: left; padding-left: 10px;" />
@@ -162,8 +161,7 @@ MLflow, Databricks CLI, and REST API.
 
 **Passing score**: 70%
 
-[SnowPro Advanced: Data
-Engineer](https://www.snowflake.com/certifications/)
+[**SnowPro Advanced: Data Engineer**](https://www.snowflake.com/certifications/)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image7.png" />
@@ -185,8 +183,7 @@ evaluate performance, and share data between cloud platforms.
 
 **Passing score**: 750 (out of 1000)
 
-[Cloudera Certified Professional Data
-Engineer](https://www.cloudera.com/about/training/certification/cdhhdp-certification/ccp-data-engineer.html)
+[**Cloudera Certified Professional Data Engineer**](https://www.cloudera.com/about/training/certification/cdhhdp-certification/ccp-data-engineer.html)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image8.png" />
@@ -207,8 +204,7 @@ Engineer.
 
 **Passing score**: 70%
 
-[Confluent Certified Developer for Apache
-Kafka®](https://www.confluent.io/certification/#faqs)
+[**Confluent Certified Developer for Apache Kafka**](https://www.confluent.io/certification/#faqs)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image9.png" />
@@ -227,9 +223,7 @@ of Confluent, Apache Kafka, and the entire Apache Kafka ecosystem.
 
 **Passing score**: there are two options: Passed and Failed.
 
-IBM\'s
-[Data](https://www.edx.org/professional-certificate/ibm-data-engineering)
-Engineering Professional Certificate
+[** IBM\'s Data Engineering Professional Certificate**](https://www.edx.org/professional-certificate/ibm-data-engineering)
 
 <p align="center">
   <img src="/imgs/top-8-data-engineering-certifications/image10.png" />
@@ -243,7 +237,7 @@ will be supposed to take a 75-minute test to obtain a certificate.
 
 **Duration**: 14 months
 
-**Cost**: \$1,076
+**Cost**: \$1076
 
 I am a certified specialist in Azure and GCP. Partially thanks to the
 certifications, I receive requests from recruiters to consider their

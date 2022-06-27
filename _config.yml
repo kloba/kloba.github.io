@@ -16,7 +16,10 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Custom vars
 version:             0.1.0
 google_analytics_id: G-8NM8R9G3XM
+
+#

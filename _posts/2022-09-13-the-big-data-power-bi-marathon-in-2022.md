@@ -13,16 +13,9 @@ so special?
 
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
-  
-<div>
-    <img src="/imgs/the-big-data-power-bi-marathon/image1.png" style="vertical-align: middle;" class="noneDisplay"/>
-    <span style="vertical-align: middle;">Here is some text.</span>
-</div>
 
-  <img src="/imgs/the-big-data-power-bi-marathon/image1.png" align="middle" class="noneDisplay" />[**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
-  
+  ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   ![A person in a white shirt Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image2.png)             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare
-
   ![A person smiling with her hand on her chin Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image3.png)	  [**Anna Voropaieva**](https://www.linkedin.com/in/anna-voropaieva-a588b63/), Senior BI Engineer at SoftServe
   ![A person with a beard Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image4.png)                        [**Ásgeir Gunnarsson**](https://www.linkedin.com/in/asgeirgun/), Owner of North Insights and Microsoft MVP
   ![A picture containing text, person, person, posing Description automatically generated](/imgs/the-big-data-power-bi-marathon/image5.png)                   [**Damian Widera**](https://www.linkedin.com/in/damian-widera-0b56284/), Microsoft MVP for SQL Server and Microsoft Certified Trainer

@@ -1,12 +1,12 @@
-img[src*='#left'] {
+img.left {
     float: left;
 }
 
-img[src*='#right'] {
+img.right {
     float: right;
 }
 
-img[src*='#center'] {
+img.center {
     display: block;
     margin: auto;
 }

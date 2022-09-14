@@ -13,8 +13,8 @@ so special?
 
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
-
-  ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image1.png){: .left}       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer\ \
+  <img src="/imgs/the-big-data-power-bi-marathon/image1.png" width="100" height="180" align="top" />[**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer<br><br>
+  ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer\ \
 
   ![A person in a white shirt Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image2.png){: .left}             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare\ \
 

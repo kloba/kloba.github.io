@@ -1,4 +1,4 @@
 img.noneDisplay {
-    display: none;
+    display: unset;
     padding: 10px;
 }

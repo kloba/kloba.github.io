@@ -13,6 +13,11 @@ so special?
 
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
+  
+<div>
+    <img src="/imgs/the-big-data-power-bi-marathon/image1.png" style="vertical-align: middle;"/>
+    <span style="vertical-align: middle;">Here is some text.</span>
+</div>
 
   <img src="/imgs/the-big-data-power-bi-marathon/image1.png" align="middle" class="noneDisplay" />[**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   

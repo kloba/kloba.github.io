@@ -15,8 +15,8 @@ Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
 
 <div class="clearfix">
-  <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="float-left">
-  <p><a src="https://www.linkedin.com/in/andremelancia/">André Melancia</a> Developer, DBA, and Microsoft Certified Trainer</p>
+  <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="float-md-left">
+  <p><a href="https://www.linkedin.com/in/andremelancia/">André Melancia</a> Developer, DBA, and Microsoft Certified Trainer</p>
 </div>
 
   ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer

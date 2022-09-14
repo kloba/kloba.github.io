@@ -1,1 +1,4 @@
-
+img.noneDisplay {
+    display: none;
+    padding: 10px;
+}

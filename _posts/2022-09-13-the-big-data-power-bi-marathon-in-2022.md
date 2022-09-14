@@ -11,6 +11,7 @@ both international speakers and audience. The Marathon was a perfect
 combination of expertise, knowledge, practice, and drive. What made it
 so special?
 
+
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
 

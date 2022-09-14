@@ -19,23 +19,23 @@ Namely:
   
   ![](/imgs/the-big-data-power-bi-marathon/image2.png)             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare
   
-  ![A person smiling with her hand on her chin Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image3.png)	  [**Anna Voropaieva**](https://www.linkedin.com/in/anna-voropaieva-a588b63/), Senior BI Engineer at SoftServe
+  ![](/imgs/the-big-data-power-bi-marathon/image3.png)	  [**Anna Voropaieva**](https://www.linkedin.com/in/anna-voropaieva-a588b63/), Senior BI Engineer at SoftServe
   
-  ![A person with a beard Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image4.png)                        [**Ásgeir Gunnarsson**](https://www.linkedin.com/in/asgeirgun/), Owner of North Insights and Microsoft MVP
+  ![](/imgs/the-big-data-power-bi-marathon/image4.png)                        [**Ásgeir Gunnarsson**](https://www.linkedin.com/in/asgeirgun/), Owner of North Insights and Microsoft MVP
   
-  ![A picture containing text, person, person, posing Description automatically generated](/imgs/the-big-data-power-bi-marathon/image5.png)                   [**Damian Widera**](https://www.linkedin.com/in/damian-widera-0b56284/), Microsoft MVP for SQL Server and Microsoft Certified Trainer
+  ![](/imgs/the-big-data-power-bi-marathon/image5.png)                   [**Damian Widera**](https://www.linkedin.com/in/damian-widera-0b56284/), Microsoft MVP for SQL Server and Microsoft Certified Trainer
   
-  ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image6.png)              [**Iryna Vilchynska**](https://www.linkedin.com/in/iryna-v-67a353120/), Lead BigData DW/BI Engineer
+  ![](/imgs/the-big-data-power-bi-marathon/image6.png)              [**Iryna Vilchynska**](https://www.linkedin.com/in/iryna-v-67a353120/), Lead BigData DW/BI Engineer
   
-  ![A picture containing diagram Description automatically generated](/imgs/the-big-data-power-bi-marathon/image7.png)                                        [**Jermaine McDonald**](https://www.linkedin.com/in/jermainehmcdonald/), Power BI Trainer, Data Analytics Training Manager, Microsoft Certified Trainer (MCT), and co-founder of Learn Grow Invest
+  ![](/imgs/the-big-data-power-bi-marathon/image7.png)                                        [**Jermaine McDonald**](https://www.linkedin.com/in/jermainehmcdonald/), Power BI Trainer, Data Analytics Training Manager, Microsoft Certified Trainer (MCT), and co-founder of Learn Grow Invest
   
-  ![A person with a beard and glasses Description automatically generated with low confidence](/imgs/the-big-data-power-bi-marathon/image8.png)               [**Markus Ehrenmueller-Jensen**](https://www.linkedin.com/in/markus-ehrenmueller/), Founder and Business Intelligence at Savory Data
+  ![](/imgs/the-big-data-power-bi-marathon/image8.png)               [**Markus Ehrenmueller-Jensen**](https://www.linkedin.com/in/markus-ehrenmueller/), Founder and Business Intelligence at Savory Data
   
-  ![A person wearing glasses Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image9.png)                     [**Reza Rad**](https://www.linkedin.com/in/rezarad/?originalSubdomain=nz), Founder & CEO at RADACAD and Microsoft Regional Director
+  ![](/imgs/the-big-data-power-bi-marathon/image9.png)                     [**Reza Rad**](https://www.linkedin.com/in/rezarad/?originalSubdomain=nz), Founder & CEO at RADACAD and Microsoft Regional Director
   
-  ![A person wearing glasses Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image10.png)                    [**Vitali Burla**](https://www.linkedin.com/in/vitaliburla/), Data Analyst at ABN AMRO Bank N.V.
+  ![](/imgs/the-big-data-power-bi-marathon/image10.png)                    [**Vitali Burla**](https://www.linkedin.com/in/vitaliburla/), Data Analyst at ABN AMRO Bank N.V.
   
-  ![A person with a beard Description automatically generated with low confidence](/imgs/the-big-data-power-bi-marathon/image11.png)                          [**Taras Kloba**](https://www.linkedin.com/in/kloba/), Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine
+  ![](/imgs/the-big-data-power-bi-marathon/image11.png)                          [**Taras Kloba**](https://www.linkedin.com/in/kloba/), Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine
   
   ![](/imgs/the-big-data-power-bi-marathon/image12.png)                                                                                                       [**Olga Nazarenko**](https://www.linkedin.com/in/otipita/), Senior DW/BI Engineer at SoftServe
 
@@ -72,4 +72,8 @@ solution. The mixture of qualified professionals and
 hungry-for-knowledge students demonstrated that fortune favors the bold,
 and hard work always pays off!
 
-https://user-images.githubusercontent.com/45521694/190268827-b86273b2-2dc1-420a-8cf1-4a94b5a9d66a.mp4
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/45521694/190268827-b86273b2-2dc1-420a-8cf1-4a94b5a9d66a.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>

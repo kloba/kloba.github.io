@@ -14,7 +14,7 @@ so special?
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
 
-  ![A person smiling for the camera Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image1.png){: .left}       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
+  <img alt="A person smiling for the camera Description automatically generated with medium confidence" class="left">       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   ![A person in a white shirt Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image2.png){: .left}             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare
   ![A person smiling with her hand on her chin Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image3.png)	  [**Anna Voropaieva**](https://www.linkedin.com/in/anna-voropaieva-a588b63/), Senior BI Engineer at SoftServe
   ![A person with a beard Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image4.png)                        [**Ásgeir Gunnarsson**](https://www.linkedin.com/in/asgeirgun/), Owner of North Insights and Microsoft MVP

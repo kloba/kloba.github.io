@@ -1,7 +1,8 @@
-﻿---
+---
 layout: post
 title: The Big Data Power BI Marathon in 2022
 ---
+
 Big Data & Analytics Competence Development Team at SoftServe always
 aims to deliver the best solutions and opportunities. The Big Data Power
 BI Marathon was not an exception. What intended to be a Power BI

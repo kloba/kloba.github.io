@@ -26,7 +26,7 @@ Namely:
   ![A person wearing glasses Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image9.png)                     [**Reza Rad**](https://www.linkedin.com/in/rezarad/?originalSubdomain=nz), Founder & CEO at RADACAD and Microsoft Regional Director
   ![A person wearing glasses Description automatically generated with medium confidence](/imgs/the-big-data-power-bi-marathon/image10.png)                    [**Vitali Burla**](https://www.linkedin.com/in/vitaliburla/), Data Analyst at ABN AMRO Bank N.V.
   ![A person with a beard Description automatically generated with low confidence](/imgs/the-big-data-power-bi-marathon/image11.png)                          [**Taras Kloba**](https://www.linkedin.com/in/kloba/), Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine
-  ![](/imgs/the-big-data-power-bi-marathon/image12.png){width="0.997357830271216in" height="1.0in"}                                                           [**Olga Nazarenko**](https://www.linkedin.com/in/otipita/), Senior DW/BI Engineer at SoftServe
+  ![](/imgs/the-big-data-power-bi-marathon/image12.png)                                                                                                       [**Olga Nazarenko**](https://www.linkedin.com/in/otipita/), Senior DW/BI Engineer at SoftServe
 
 The speakers brought to the table exclusive insights and practical
 pieces of advice. They proved one more time that the Power BI universe

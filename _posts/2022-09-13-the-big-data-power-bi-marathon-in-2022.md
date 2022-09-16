@@ -83,7 +83,7 @@ Namely:
 </div>
     
 <div class="row pt-md">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-xs-6 col-md-4">
         <div class="profile">
             <div class="img-box rounded">
                 <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
@@ -92,7 +92,7 @@ Namely:
             <h2>Developer, DBA, and Microsoft Certified Trainer</h2>
         </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-xs-6 col-md-4">
         <div class="profile">
             <div class="img-box rounded">
             <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
@@ -101,7 +101,10 @@ Namely:
             <h2>Co-founder of FrameStory SoftWare</h2>
         </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="col-xs-6 col-md-4">
         <div class="profile">
             <div class="img-box rounded">
             <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
@@ -113,21 +116,24 @@ Namely:
     <div class="clearfix hidden-xs hidden-sm">
              <!-- clearfix sm and up cols every 3 -->
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/asgeirgun">Ásgeir Gunnarsson</a></h1>
         <h2>Owner of North Insights and Microsoft MVP</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image5.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/damian-widera-0b56284/">Damian Widera</a></h1>
         <h2>Microsoft MVP for SQL Server and Microsoft Certified Trainer</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
         </div>
@@ -137,21 +143,27 @@ Namely:
     <div class="clearfix hidden-xs hidden-sm">
              <!-- clearfix sm and up cols every 3 -->
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image7.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/jermainehmcdonald/">Jermaine McDonald</a></h1>
         <h2>Power BI Trainer, Data Analytics Training Manager, Microsoft Certified Trainer (MCT), and co-founder of Learn Grow Invest</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image8.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/markus-ehrenmueller/">Markus Ehrenmueller-Jensen</a></h1>
         <h2>Founder and Business Intelligence at Savory Data</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image9.png" class="img-responsive">
         </div>
@@ -161,26 +173,35 @@ Namely:
     <div class="clearfix hidden-xs hidden-sm">
              <!-- clearfix sm and up cols every 3 -->
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image10.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/vitaliburla/">Vitali Burla</a></h1>
         <h2>Data Analyst at ABN AMRO Bank N.V.</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image11.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/vitaliburla/">Taras Kloba</a></h1>
         <h2>Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine</h2>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+    <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image12.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/vitaliburla/">Olga Nazarenko</a></h1>
         <h2>Senior DW/BI Engineer at SoftServe</h2>
+    </div>
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+    </div>
+    <div class="clearfix hidden-xs hidden-sm">
+             <!-- clearfix sm and up cols every 3 -->
     </div>
 </div> 
   

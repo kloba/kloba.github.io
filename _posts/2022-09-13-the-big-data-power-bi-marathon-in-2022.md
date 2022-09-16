@@ -21,7 +21,7 @@ Namely:
         <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
         </div>
         <h1><a href="https://www.linkedin.com/in/andremelancia/">André Melancia</a></h1>
-        <h2>Developer,DBA, and Microsoft Certified Trainer</h2>
+        <h2>Developer, DBA, and Microsoft Certified Trainer</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">

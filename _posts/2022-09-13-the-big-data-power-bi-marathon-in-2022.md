@@ -51,17 +51,6 @@ Namely:
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
-        </div>
-        <h1>John Doe</h1>
-        <h2>Designer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image5.png" class="img-responsive">
         <ul class="text-center">
             <a href="#"><li><i class="fa fa-twitter"></i></li></a>
@@ -149,9 +138,21 @@ Namely:
         <h2>Fullstack Developer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+        <div class="img-box">
+        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
+        <ul class="text-center">
+            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+        </ul>
+        </div>
+        <h1>Cherry John</h1>
+        <h2>Fullstack Developer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
 </div> 
   
-        ![André Melancia](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
+
+   ![André Melancia](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   
   ![Andrey Nikolov](/imgs/the-big-data-power-bi-marathon/image2.png)             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare
   

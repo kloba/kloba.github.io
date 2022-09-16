@@ -16,7 +16,7 @@ Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
     
 <div class="row pt-md">
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
         <ul class="text-center">
@@ -27,7 +27,7 @@ Namely:
         <h2>Co-founder/ Operations</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
         <ul class="text-center">
@@ -38,7 +38,7 @@ Namely:
         <h2>Co-founder/ Projects</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
         <ul class="text-center">
@@ -51,7 +51,7 @@ Namely:
     </div>
     <div class="w-100"></div>
 
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         <ul class="text-center">
@@ -62,7 +62,7 @@ Namely:
         <h2>Designer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image5.png" class="img-responsive">
         <ul class="text-center">
@@ -74,7 +74,7 @@ Namely:
         <h2>Web Developer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 profile">
         <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image5.png" class="img-responsive">
         <ul class="text-center">

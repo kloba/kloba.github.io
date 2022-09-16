@@ -28,6 +28,9 @@ Namely:
                 <div class="panel-body">2 - This is another panel with even more text content!</div>
             </div>
         </div>
+        <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+        </div>
         <div class="col-xs-4 col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">3 - This is a panel with just some text, stuff to say and some more blah filler fill content with even more text content...
@@ -42,6 +45,9 @@ Namely:
                 <div class="panel-body">4 - This is my panel with some blah content aliquam in cursus ut, ullamcorper in tort..</div>
             </div>
         </div>
+        <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+        </div>
         <div class="col-xs-4 col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">5 - This is another panel with even more content!</div>
@@ -52,6 +58,9 @@ Namely:
                 <div class="panel-body">6 - This is a panel with and image
                     <br><img src="//via.placeholder.com/150x80"> </div>
             </div>
+        </div>
+        <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
         </div>
         <div class="clearfix hidden-xs hidden-sm">
             <!-- clearfix sm and up cols every 3 -->
@@ -66,6 +75,9 @@ Namely:
                 <div class="panel-body">8 - This is a panel with and image
                     <br><img src="//via.placeholder.com/150x100"> </div>
             </div>
+        </div>
+        <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
         </div>
     </div>
 </div>

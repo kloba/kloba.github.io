@@ -165,7 +165,7 @@ hungry-for-knowledge students demonstrated that fortune favors the bold,
 and hard work always pays off!
 
 <div class="wrapper">
-  <video class="videoInsert" controls="">
+  <video class="videoInsert" >
   <source src="https://user-images.githubusercontent.com/45521694/190268827-b86273b2-2dc1-420a-8cf1-4a94b5a9d66a.mp4" type="video/mp4">
   Your browser does not support the video tag.
  </video>

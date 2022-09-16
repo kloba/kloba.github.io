@@ -15,31 +15,30 @@ so special?
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
     
-<div class="row pt-md">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box rounded">
-        <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
-        </div>
-        <h1><a href="https://www.linkedin.com/in/andremelancia/">André Melancia</a></h1>
-        <h2>Developer, DBA, and Microsoft Certified Trainer</h2>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box rounded">
-        <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
-        </div>
-        <h1><a href="https://www.facebook.com/andrew.nikoloff">Andrey Nikolov</a></h1>
-        <h2>Co-founder of FrameStory SoftWare</h2>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box rounded">
-        <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
-        </div>
-        <h1><a href="https://www.linkedin.com/in/anna-voropaieva-a588b63/">Anna Voropaieva</a></h1>
-        <h2>Senior BI Engineer at SoftServe</h2>
-    </div>
-    </div>
     <div class="row pt-md">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+            <div class="img-box rounded">
+            <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
+            </div>
+            <h1><a href="https://www.linkedin.com/in/andremelancia/">André Melancia</a></h1>
+            <h2>Developer, DBA, and Microsoft Certified Trainer</h2>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+            <div class="img-box rounded">
+            <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
+            </div>
+            <h1><a href="https://www.facebook.com/andrew.nikoloff">Andrey Nikolov</a></h1>
+            <h2>Co-founder of FrameStory SoftWare</h2>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+            <div class="img-box rounded">
+            <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
+            </div>
+            <h1><a href="https://www.linkedin.com/in/anna-voropaieva-a588b63/">Anna Voropaieva</a></h1>
+            <h2>Senior BI Engineer at SoftServe</h2>
+        </div>
+        </div>
+    <div class="row pt-md">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
             <div class="img-box rounded">
             <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
@@ -107,7 +106,7 @@ Namely:
             <h1><a href="https://www.linkedin.com/in/vitaliburla/">Olga Nazarenko</a></h1>
             <h2>Senior DW/BI Engineer at SoftServe</h2>
         </div>
-    </div> 
+    </div>  
   
 The speakers brought to the table exclusive insights and practical
 pieces of advice. They proved one more time that the Power BI universe

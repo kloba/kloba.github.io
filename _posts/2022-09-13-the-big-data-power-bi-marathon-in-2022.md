@@ -117,8 +117,9 @@ and hard work always pays off!
   Your browser does not support the video tag.
  </video>
 </div>
-
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://user-images.githubusercontent.com/45521694/190274064-ab1c3f89-c36e-4a5a-b378-8f5287adc940.mp4" allowfullscreen></iframe>
+<div class="wrapper">
+  <video class="videoInsert">
+  <source src="https://user-images.githubusercontent.com/45521694/190274064-ab1c3f89-c36e-4a5a-b378-8f5287adc940.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+ </video>
 </div>

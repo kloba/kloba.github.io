@@ -15,7 +15,6 @@ so special?
 Easy. Firstly, the pool of speakers was full of A-list Power BI experts.
 Namely:
 
-<section class="team">
     <div class="row pt-md">
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
             <div class="img-box">
@@ -167,7 +166,6 @@ Namely:
             <h2>Fullstack Developer</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-</section>
 
   ![André Melancia](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   

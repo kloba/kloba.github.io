@@ -30,95 +30,77 @@ Namely:
         <h1><a href="https://www.facebook.com/andrew.nikoloff">Andrey Nikolov</a></h1>
         <h2>Co-founder of FrameStory SoftWare</h2>
     </div>
-    <div class="clearfix visible-xs visible-sm">
-            <!-- clearfix xs cols every 2 -->
-        </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
         </div>
-        <h1><a href="https://www.facebook.com/andrew.nikoloff">Anna Voropaieva</a></h1>
+        <h1><a href="https://www.linkedin.com/in/anna-voropaieva-a588b63/">Anna Voropaieva</a></h1>
         <h2>Senior BI Engineer at SoftServe</h2>
     </div>
     <div class="clearfix hidden-xs hidden-sm">
              <!-- clearfix sm and up cols every 3 -->
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/asgeirgun">Ásgeir Gunnarsson</a></h1>
+        <h2>Owner of North Insights and Microsoft MVP</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/damian-widera-0b56284/">Damian Widera</a></h1>
+        <h2>Microsoft MVP for SQL Server and Microsoft Certified Trainer</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/iryna-v-67a353120/">Iryna Vilchynska</a></h1>
+        <h2>Lead BigData DW/BI Engineer</h2>
+    </div>
+    <div class="clearfix hidden-xs hidden-sm">
+             <!-- clearfix sm and up cols every 3 -->
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/markus-ehrenmueller/">Markus Ehrenmueller-Jensen</a></h1>
+        <h2>Founder and Business Intelligence at Savory Data</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/rezarad/?originalSubdomain=nz">Reza Rad</a></h1>
+        <h2>Founder & CEO at RADACAD and Microsoft Regional Director</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/vitaliburla/">Vitali Burla</a></h1>
+        <h2>Data Analyst at ABN AMRO Bank N.V.</h2>
+    </div>
+    <div class="clearfix hidden-xs hidden-sm">
+             <!-- clearfix sm and up cols every 3 -->
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/vitaliburla/">Taras Kloba</a></h1>
+        <h2>Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image4.png" class="img-responsive">
+        </div>
+        <h1><a href="https://www.linkedin.com/in/vitaliburla/">Olga Nazarenko</a></h1>
+        <h2>Senior DW/BI Engineer at SoftServe</h2>
     </div>
 </div> 
   

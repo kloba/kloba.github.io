@@ -29,13 +29,13 @@ Namely:
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
+        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
         <ul class="text-center">
             <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
         </ul>
         </div>
-        <h1>Christopher Di</h1>
-        <h2>Co-founder/ Projects</h2>
+        <h1>Cherry John</h1>
+        <h2>Fullstack Developer</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">

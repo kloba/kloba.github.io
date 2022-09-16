@@ -37,8 +37,8 @@ Namely:
         <h1><a href="https://www.linkedin.com/in/anna-voropaieva-a588b63/">Anna Voropaieva</a></h1>
         <h2>Senior BI Engineer at SoftServe</h2>
     </div>
-    <div class="clearfix hidden-xs hidden-sm">
-             <!-- clearfix sm and up cols every 3 -->
+</div>
+<div class="row pt-md">
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
@@ -61,9 +61,8 @@ Namely:
         <h1><a href="https://www.linkedin.com/in/iryna-v-67a353120/">Iryna Vilchynska</a></h1>
         <h2>Lead BigData DW/BI Engineer</h2>
     </div>
-    <div class="clearfix hidden-xs hidden-sm">
-             <!-- clearfix sm and up cols every 3 -->
-    </div>
+</div>
+<div class="row pt-md">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image7.png" class="img-responsive">
@@ -85,9 +84,8 @@ Namely:
         <h1><a href="https://www.linkedin.com/in/rezarad/?originalSubdomain=nz">Reza Rad</a></h1>
         <h2>Founder & CEO at RADACAD and Microsoft Regional Director</h2>
     </div>
-    <div class="clearfix hidden-xs hidden-sm">
-             <!-- clearfix sm and up cols every 3 -->
-    </div>
+</div>
+<div class="row pt-md">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image10.png" class="img-responsive">

@@ -87,7 +87,7 @@ Namely:
     </div>
     <div class="w-100"></div>
 
-</div>
+</div> 
   
         ![André Melancia](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
   

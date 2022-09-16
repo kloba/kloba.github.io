@@ -17,7 +17,7 @@ Namely:
     
 <div class="row pt-md">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
+        <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
         <ul class="text-center">
             <a href="#"><li><i class="fa fa-linkedin"></i></li></a>

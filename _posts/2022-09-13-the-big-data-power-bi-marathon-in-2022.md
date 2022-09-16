@@ -18,51 +18,6 @@ Namely:
 <div class="row pt-md">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
-        </div>
-        <h1>Marrie Doi</h1>
-        <h2>Co-founder/ Operations</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
-        </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
-        </div>
-        <h1>Heather H</h1>
-        <h2>Co-founder/ Marketing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
-        <img src="/imgs/the-big-data-power-bi-marathon/image5.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
-        </div>
-        <h1>Peter John</h1>
-        <h2>Web Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
-        <div class="img-box">
         <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
         <ul class="text-center">
             <a href="#"><li><i class="fa fa-linkedin"></i></li></a>

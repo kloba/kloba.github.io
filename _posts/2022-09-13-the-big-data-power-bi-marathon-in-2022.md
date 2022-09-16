@@ -30,12 +30,18 @@ Namely:
         <h1><a href="https://www.facebook.com/andrew.nikoloff">Andrey Nikolov</a></h1>
         <h2>Co-founder of FrameStory SoftWare</h2>
     </div>
+    <div class="clearfix visible-xs visible-sm">
+            <!-- clearfix xs cols every 2 -->
+        </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
         </div>
         <h1><a href="https://www.facebook.com/andrew.nikoloff">Anna Voropaieva</a></h1>
         <h2>Senior BI Engineer at SoftServe</h2>
+    </div>
+    <div class="clearfix hidden-xs hidden-sm">
+             <!-- clearfix sm and up cols every 3 -->
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box">

@@ -111,31 +111,6 @@ Namely:
     </div>
 </div> 
   
-
-   ![André Melancia](/imgs/the-big-data-power-bi-marathon/image1.png)       [**André Melancia**](https://www.linkedin.com/in/andremelancia/), Developer, DBA, and Microsoft Certified Trainer
-  
-  ![Andrey Nikolov](/imgs/the-big-data-power-bi-marathon/image2.png)             [**Andrey Nikolov**](https://www.facebook.com/andrew.nikoloff), Co-founder of FrameStory SoftWare
-  
-  ![Anna Voropaieva](/imgs/the-big-data-power-bi-marathon/image3.png)	  [**Anna Voropaieva**](https://www.linkedin.com/in/anna-voropaieva-a588b63/), Senior BI Engineer at SoftServe
-  
-  ![Ásgeir Gunnarsson](/imgs/the-big-data-power-bi-marathon/image4.png)                        [**Ásgeir Gunnarsson**](https://www.linkedin.com/in/asgeirgun/), Owner of North Insights and Microsoft MVP
-  
-  ![Damian Widera](/imgs/the-big-data-power-bi-marathon/image5.png)                   [**Damian Widera**](https://www.linkedin.com/in/damian-widera-0b56284/), Microsoft MVP for SQL Server and Microsoft Certified Trainer
-  
-  ![Iryna Vilchynska](/imgs/the-big-data-power-bi-marathon/image6.png)              [**Iryna Vilchynska**](https://www.linkedin.com/in/iryna-v-67a353120/), Lead BigData DW/BI Engineer
-  
-  ![Jermaine McDonald](/imgs/the-big-data-power-bi-marathon/image7.png)                                        [**Jermaine McDonald**](https://www.linkedin.com/in/jermainehmcdonald/), Power BI Trainer, Data Analytics Training Manager, Microsoft Certified Trainer (MCT), and co-founder of Learn Grow Invest
-  
-  ![Markus Ehrenmueller-Jensen](/imgs/the-big-data-power-bi-marathon/image8.png)               [**Markus Ehrenmueller-Jensen**](https://www.linkedin.com/in/markus-ehrenmueller/), Founder and Business Intelligence at Savory Data
-  
-  ![Reza Rad](/imgs/the-big-data-power-bi-marathon/image9.png)                     [**Reza Rad**](https://www.linkedin.com/in/rezarad/?originalSubdomain=nz), Founder & CEO at RADACAD and Microsoft Regional Director
-  
-  ![Vitali Burla](/imgs/the-big-data-power-bi-marathon/image10.png)                    [**Vitali Burla**](https://www.linkedin.com/in/vitaliburla/), Data Analyst at ABN AMRO Bank N.V.
-  
-  ![Taras Kloba](/imgs/the-big-data-power-bi-marathon/image11.png)                          [**Taras Kloba**](https://www.linkedin.com/in/kloba/), Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine
-  
-  ![Olga Nazarenko](/imgs/the-big-data-power-bi-marathon/image12.png)                                             [**Olga Nazarenko**](https://www.linkedin.com/in/otipita/), Senior DW/BI Engineer at SoftServe
-
 The speakers brought to the table exclusive insights and practical
 pieces of advice. They proved one more time that the Power BI universe
 has no borders. From Portugal, New Zealand, Bulgaria, and Poland, the

@@ -5,19 +5,19 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <div class="post">
+        <h1 class="post-title">
+            <a href="{{ post.url | absolute_url }}">
+                {{ post.title }}
+            </a>
+        </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {% if post.content | number_of_words > 130 %}
-      {{ post.content | truncatewords:130 }}
-    {% endif %}
-    <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
-  </div>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+        {% if post.content | number_of_words > 130 %}
+        {{ post.content | truncatewords:83 }}
+        {% endif %}
+        <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
+    </div>
   {% endfor %}
 </div>
 

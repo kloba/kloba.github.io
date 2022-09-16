@@ -18,14 +18,24 @@ Namely:
 <div class="row pt-md">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box rounded">
-        <img src="/imgs/the-big-data-power-bi-marathon/image6.png" class="img-responsive">
-        <ul class="text-center">
-            <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
-        </ul>
+        <img src="/imgs/the-big-data-power-bi-marathon/image1.png" class="img-responsive">
         </div>
-        <h1>Cherry John</h1>
-        <h2>Fullstack Developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h1><a href="https://www.linkedin.com/in/andremelancia/">André Melancia</a></h1>
+        <h2>Developer,DBA, and Microsoft Certified Trainer</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image2.png" class="img-responsive">
+        </div>
+        <h1><a href="https://www.facebook.com/andrew.nikoloff">Andrey Nikolov</a></h1>
+        <h2>Co-founder of FrameStory SoftWare</h2>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
+        <div class="img-box rounded">
+        <img src="/imgs/the-big-data-power-bi-marathon/image3.png" class="img-responsive">
+        </div>
+        <h1><a href="https://www.facebook.com/andrew.nikoloff">Anna Voropaieva</a></h1>
+        <h2>Senior BI Engineer at SoftServe</h2>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 profile">
         <div class="img-box">

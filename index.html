@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% if post.content | number_of_words > 130 %}
-      {{ post.content | truncatewords:130 }}
+      {{ post.content | truncatewords:83 }}
     {% endif %}
     <a href="{{ site.baseurl }}{{ post.url}}" class="read-more">Read More</a>
   </div>

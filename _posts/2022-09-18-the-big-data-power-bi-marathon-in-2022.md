@@ -120,14 +120,14 @@ Namely:
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image11.png" class="img-responsive">
         </div>
-        <h1><a href="https://www.linkedin.com/in/vitaliburla/">Taras Kloba</a></h1>
+        <h1><a href="https://www.linkedin.com/in/kloba/">Taras Kloba</a></h1>
         <h2>Big Data Engineering Manager at SoftServe and Co-Founder at PostgreSQL Ukraine</h2>
     </div>
     <div class="col-xs-6 col-md-4 profile">
         <div class="img-box rounded">
         <img src="/imgs/the-big-data-power-bi-marathon/image12.png" class="img-responsive">
         </div>
-        <h1><a href="https://www.linkedin.com/in/vitaliburla/">Olga Nazarenko</a></h1>
+        <h1><a href="https://www.linkedin.com/in/otipita/">Olga Nazarenko</a></h1>
         <h2>Senior DW/BI Engineer at SoftServe</h2>
     </div>
     <div class="clearfix visible-xs visible-sm">

@@ -5,7 +5,7 @@ title: My Favorite Books of 2022
 
 Hello and welcome to my blog!
 
-Today, I want to share with you my top 10 books that I listened to this year. These books are not directly related to my work, but rather are for personal development and enjoyment. I'm an avid reader and love to listen to books while I'm doing routine work. Listening to books helps me make the most of my time and keeps my mind engaged. I usually listen to about 15 hours of books per month, which allows me to get through 2-3 books. I use the Audible app for all my book listening and have been really happy with the selection and service they provide.
+Today, I want to share with you my top 10 books that I listened to this year. These books are not directly related to my work, but rather are for personal development and enjoyment. I'm an avid reader and love to listen to books while I'm doing routine work. Listening to books helps me make the most of my time and keeps my mind engaged. I usually listen to about 15 hours of books per month, which allows me to get through 2-3 books. I use the [Audible](https://amzn.to/3jKzjlD) app for all my book listening and have been really happy with the selection and service they provide.
 
 ![](/imgs/top-9-books.jpg)
 

@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: The Big Data Power BI Marathon in 2022
+title: The Power BI Marathon in 2022
 ---
 
 Big Data & Analytics Competence Development Team at SoftServe always

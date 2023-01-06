@@ -7,7 +7,7 @@ As a Microsoft Certified: Power BI Data Analyst Associate, I recently received a
 
 ![](/imgs/renew-power-bi.png)
 
-I work with Power BI on a daily basis, so I didn't feel like I needed any extra preparation. However, for those who are not as familiar with Power BI, I recommend going through the "Prepare for the renewal assessment" course on Microsoft Learn (https://learn.microsoft.com/en-us/certifications/power-bi-data-analyst-associate/renew/). It consists of 7 modules that will help refresh your knowledge and prepare you for the renewal assessment.
+I work with Power BI on a daily basis, so I didn't feel like I needed any extra preparation. However, for those who are not as familiar with Power BI, I recommend going through the "Prepare for the renewal assessment" [course on Microsoft Learn](https://learn.microsoft.com/en-us/certifications/power-bi-data-analyst-associate/renew/). It consists of 7 modules that will help refresh your knowledge and prepare you for the renewal assessment.
 
 The renewal assessment is a short, unproctored assessment that tests your current skills in your job role. It consists of 25 questions and took me about 45 minutes to complete. I was happy to see that I passed the assessment on my first try and received a notification that my certification had been extended for another year.
 

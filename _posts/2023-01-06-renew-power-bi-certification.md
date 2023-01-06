@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Renewing My Microsoft Certified: Power BI Data Analyst Associate Certification
+title: 'Renewing My Microsoft Certified: Power BI Data Analyst Associate Certification'
 ---
 
 As a Microsoft Certified: Power BI Data Analyst Associate, I recently received a notification that it was time to renew my certification. I knew that I had to act fast as the renewal process must be completed before my certification expires – the first notification is sent 90 days before the expiration date, but you can start the process up to 6 months before it expires.

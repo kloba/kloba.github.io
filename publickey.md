@@ -12,7 +12,7 @@ Using PGP is easy and there are many free and open-source tools available to hel
 To encrypt a message for someone, you can use their public key to encrypt the message, and they can then use their private key to decrypt it. To digitally sign a message, you can use your own private key to sign the message, and the recipient can use your public key to verify the signature.
 
 Here is my public key:
-<code>
+```
   -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQGNBGPVgA0BDADguyD5XttIVbF3m4rusRFgkcRXCyN5T8uZkibOacBN7wLI39t0
@@ -54,5 +54,5 @@ q5Sr+84VzGDSkmrhIf2RH2stKuYdO1x8oXAhM1Ozh+RPV41STkb7hkrec6mvhrTA
 gUFwmAMyXbdsyIz2ffMK7icPtVww
 =0TGu
 -----END PGP PUBLIC KEY BLOCK-----
-</code>
+```
 

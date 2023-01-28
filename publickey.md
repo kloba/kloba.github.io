@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Public key
+title: My Public Key
 ---
 
 As we live in a digital era, the security of our personal and professional communications is more important than ever. One way to ensure the security of our messages is by using Pretty Good Privacy (PGP).

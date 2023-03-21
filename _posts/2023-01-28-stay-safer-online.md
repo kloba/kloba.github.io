@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Stay Safer Online: How to Generate Unique Passwords and Usernames on MacOS
+title: "Stay Safer Online: How to Generate Unique Passwords and Usernames on MacOS"
 ---
 
 In today's digital age, data breaches are becoming increasingly common. A recent report found that 85% of companies experience at least one ransomware attack yearly [<a href="#link1">1</a>]. This means that it's more important than ever to take steps to protect your personal information online. One of the potential ways to do this is to use unique passwords and usernames for every website and system you use. This guide will show you how to use the Shortcuts app on MacOS to quickly generate random passwords and usernames.

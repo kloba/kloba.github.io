@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Stay Safer Online: How to Generate Unique Passwords and Usernames on MacOS"
 ---

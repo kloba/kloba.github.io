@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Text to DAX: Power BI\'s AI-Powered Quick Measure Suggestions"
+title: 'From Text to DAX: Power BI\'s AI-Powered Quick Measure Suggestions'
 ---
 
 ****

@@ -32,7 +32,7 @@ with geospatial data and contribute to the development of new solutions.
 *The materials and data used in the article are open-source and have
 been approved by the military representatives.*
 
-### First data source: how to import russian military polygon data into PostgreSQL 
+## First data source: how to import russian military polygon data into PostgreSQL 
 
 I will need certain datasets to initiate the analysis and showcase
 PostgreSQL\'s capabilities in geoanalytics. I decided to start with data
@@ -86,8 +86,7 @@ Executing the provided SQL script will allow us to create a
 **military_geometries** table that will contain polygons for 9,252
 military objects identified on OSM:
 
-![](/imgs/geoanalytics-postgresql/image1.png){width="6.487048337707787in"
-height="4.524868766404199in"}
+![](/imgs/geoanalytics-postgresql/image1.png)
 
 Visualization of 9,252 military sites across russia and the temporarily
 occupied Autonomous Republic of Crimea using QGIS
@@ -106,13 +105,12 @@ doesn\'t directly relate to our analysis, I want to show how these
 deleted objects look on a map, illustrating russian attempts to conceal
 essential data.
 
-![](/imgs/geoanalytics-postgresql/image2.jpeg){width="6.875in"
-height="5.922916666666667in"}
+![](/imgs/geoanalytics-postgresql/image2.jpeg)
 
 Deleted after 01/01/2022 (blue) and existing (red) geographical polygons
 of military facilities in moscow
 
-### Second data source: fire data from NASA satellites
+## Second data source: fire data from NASA satellites
 
 As the next data source, we will utilize information from the [Fire
 Information for Resource Management
@@ -138,8 +136,7 @@ Therefore, we will populate the **viirs_fire_events** table, which will
 contain 1,711,475 records of fires in russia. These fires appear as
 follows:
 
-![](/imgs/geoanalytics-postgresql/image3.jpeg){width="6.881944444444445in"
-height="3.3541666666666665in"}
+![](/imgs/geoanalytics-postgresql/image3.jpeg)
 
 Visualization of fires in russia since January 1, 2022 (1,711,475 fires)
 
@@ -159,15 +156,14 @@ can download them via the following links:
 [military_geometries](https://storage.googleapis.com/files.sql.ua/csv/military_geometries.csv),
 [viirs_fire_events](https://storage.googleapis.com/files.sql.ua/csv/viirs_fire_events.csv).
 
-### Searching for military facilities where fires occurred: points within the polygon
+## Searching for military facilities where fires occurred: points within the polygon
 
 As for now, we have two tables: **military_geometries** and
 **viirs_fire_events**. Let\'s try to find those military facilities that
 have had fires (since the beginning of 2022) or those that have not yet
 🙂.
 
-![](/imgs/geoanalytics-postgresql/image4.png){width="2.1411439195100614in"
-height="7.033333333333333in"}
+![](/imgs/geoanalytics-postgresql/image4.png)
 
 Let\'s use an SQL query with the
 [**ST_Contains**](https://postgis.net/docs/ST_Contains.html) function to
@@ -180,8 +176,7 @@ As you\'ve probably noticed, we\'ve identified 129 military sites that
 have experienced fires since the start of 2022. What\'s intriguing is
 that, in some cases, these fires seem to have occurred more than once.
 
-![](/imgs/geoanalytics-postgresql/image5.png){width="7.013320209973753in"
-height="2.8860126859142605in"}
+![](/imgs/geoanalytics-postgresql/image5.png)
 
 Military facilities where fires have occurred since the beginning of
 2022 (the transparency of the facilities indicates the frequency of the
@@ -207,7 +202,7 @@ number of operations.
 Hence, let\'s discuss how we can speed up the execution of such a query
 by utilizing indexes.
 
-### Productivity boost: utilizing indexing in geoanalytics 
+## Productivity boost: utilizing indexing in geoanalytics 
 
 PostgreSQL is renowned for its scalability features, offering numerous
 methods for accessing geospatial data within this database. To find all
@@ -316,7 +311,7 @@ The results table shows that the most effective indexes for our task are
 [SP-GiST](https://www.postgresql.org/docs/current/spgist.html). Let\'s
 delve into how they operate.
 
-### How GiST works 
+## How GiST works 
 
 Generalized Search Tree (GiST) indexes in PostgreSQL enable efficient
 sorting and searching across diverse data types using the concept of
@@ -324,8 +319,7 @@ balanced trees. They provide the ability to develop custom operators for
 indexing, making GiST quite versatile and adaptive to specific
 requirements.
 
-![](/imgs/geoanalytics-postgresql/image6.png){width="6.9in"
-height="5.945138888888889in"}
+![](/imgs/geoanalytics-postgresql/image6.png)
 
 The hierarchical structure of the GiST index in PostgreSQL \[1\]
 
@@ -337,7 +331,7 @@ structure, allowing for significantly faster search. Unlike B-trees,
 GiST supports overlap operations and spatial relationship determination.
 This is why GiST is well-suited for indexing geometric data.
 
-### How SP-GiST works 
+## How SP-GiST works 
 
 Space Partitioning Generalized Search Tree (SP-GiST) indexes in
 PostgreSQL are designed for data structures that partition space into
@@ -354,7 +348,7 @@ especially in large databases.
 Considering this, GiST indexes often become a better choice, especially
 when working with polygons and complex spatial structures.
 
-### Finding the nearest neighbors: 10 fires near the Shahed production plant 
+## Finding the nearest neighbors: 10 fires near the Shahed production plant 
 
 Now, let\'s attempt to solve the task of finding nearest neighbors using
 PostgreSQL. Using our datasets, we will try to identify ten fires that
@@ -381,8 +375,7 @@ radius from the selected object:
 This approach involves gradually expanding the buffer and analyzing the
 results, which can be time-consuming.
 
-![](/imgs/geoanalytics-postgresql/image7.png){width="6.901715879265092in"
-height="4.993055555555555in"}
+![](/imgs/geoanalytics-postgresql/image7.png)
 
 A plant in Tatarstan that produces Shaheds with fire visualization
 within radii of 1.5 and 10 km
@@ -420,7 +413,7 @@ tasks. As demonstrated in this article, open data can be effectively
 utilized for quickly assessing and defining goals on a global scale,
 including evaluating the success of target impact.
 
-### Uber\'s H3: a perspective on geospatial analytics and data aggregation {#ubers-h3-a-perspective-on-geospatial-analytics-and-data-aggregation .list-paragraph}
+## Uber\'s H3: a perspective on geospatial analytics and data aggregation {#ubers-h3-a-perspective-on-geospatial-analytics-and-data-aggregation .list-paragraph}
 
 The H3, developed by Uber, is a hexagonal grid system designed to
 facilitate flexible and efficient distribution of geospatial data. It
@@ -429,8 +422,7 @@ with geodata in the Armed Forces of Ukraine. Let\'s explore how this
 tool can be used for data aggregation and solving complex geoanalytical
 tasks.
 
-![](/imgs/geoanalytics-postgresql/image8.png){width="4.674759405074366in"
-height="4.465277777777778in"}
+![](/imgs/geoanalytics-postgresql/image8.png)
 
 Illustration of the Uber H3 hexagonal grid
 
@@ -557,8 +549,8 @@ Let\'s examine a few simple H3 functions that will help better
 understand how this works in practice:
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![](/imgs/geoanalytics-postgresql/image9.png){width="2.175068897637795in"   ![](/imgs/geoanalytics-postgresql/image10.png){width="2.3154615048118985in"   ![](/imgs/geoanalytics-postgresql/image11.png){width="2.308632983377078in"
-  height="2.6in"}                                                                               height="2.6in"}                                                                                 height="2.6in"}
+  ![](/imgs/geoanalytics-postgresql/image9.png)   ![](/imgs/geoanalytics-postgresql/image10.png)   ![](/imgs/geoanalytics-postgresql/image11.png)
+                                                                                                                                                                  
   --------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------
   h3_polygon_to_cells(geom, 8)                                                                  h3_grid_disk(h3_polygon_to_cells(geom, 8), 1)                                                   h3_polygon_to_cells(geom, 9)
 
@@ -584,8 +576,7 @@ Within our datasets, we can analyze military objects and, through
 aggregation with H3, calculate the density of these objects in russia.
 The visualization of this analysis looks like this:
 
-![](/imgs/geoanalytics-postgresql/image12.png){width="6.888888888888889in"
-height="4.221579177602799in"}
+![](/imgs/geoanalytics-postgresql/image12.png)
 
 Visualization of the density of military objects in russia and the
 temporarily occupied Autonomous Republic of Crimea using H3 hexagons
@@ -594,7 +585,7 @@ Using H3 for aggregating geospatial data significantly enhances
 analytical capabilities, allowing for a more profound interpretation and
 visualization of complex spatial relationships.
 
-Concluding remarks
+## Concluding remarks
 
 If you are a representative of the Armed Forces of Ukraine and are
 seeking qualified support in the field of data, Big Data, or

@@ -32,7 +32,7 @@ with geospatial data and contribute to the development of new solutions.
 *The materials and data used in the article are open-source and have
 been approved by the military representatives.*
 
-## First data source: how to import russian military polygon data into PostgreSQL {#first-data-source-how-to-import-russian-military-polygon-data-into-postgresql .list-paragraph}
+### First data source: how to import russian military polygon data into PostgreSQL 
 
 I will need certain datasets to initiate the analysis and showcase
 PostgreSQL\'s capabilities in geoanalytics. I decided to start with data
@@ -60,18 +60,14 @@ database:
 
 -   **osm2pgsql_properties**---stores settings and properties used
     during the data import.
-
 -   **planet_osm_line**---contains linear elements, such as roads and
     rivers.
-
 -   **planet_osm_point**---includes point objects, such as buildings
     (not all buildings are marked as geographic polygons, so we will
     have to come up with something to be devised to work with these
     points).
-
 -   **planet_osm_polygon**---stores polygons representing areas, such as
     military bases.
-
 -   **planet_osm_roads**---stores transportation routes.
 
 To simplify the analysis of military objects, we will create a table
@@ -84,67 +80,7 @@ allow us to create polygons based on points and lines, providing the
 ability to analyze, for example, whether a point is within the specified
 polygons.
 
-DROP TABLE IF EXISTS military_geometries;
-
- 
-
-CREATE TABLE military_geometries AS
-
-SELECT osm_id, \'line\' AS geom_type, landuse, military, building, name, operator,
-
-       ST_Buffer(way, 0.0009)::geometry(Polygon, 4326) AS geom
-
-FROM public.planet_osm_line
-
-WHERE military IS NOT NULL OR building = \'military\' OR landuse = \'military\'
-
- 
-
-UNION ALL
-
- 
-
-SELECT osm_id, \'point\' AS geom_type, landuse, military, building, name, operator,
-
-       ST_Buffer(way, 0.0009)::geometry(Polygon, 4326) AS geom
-
-FROM public.planet_osm_point
-
-WHERE military IS NOT NULL OR building = \'military\' OR landuse = \'military\'
-
- 
-
-UNION ALL
-
- 
-
-SELECT osm_id, \'polygon\' AS geom_type, landuse, military, building, name, operator,
-
-       way::geometry(Polygon, 4326) AS geom
-
-FROM public.planet_osm_polygon
-
-WHERE military IS NOT NULL OR building = \'military\' OR landuse = \'military\'
-
- 
-
-UNION ALL
-
- 
-
-SELECT osm_id, \'road\' AS geom_type, landuse, military, building, name, operator,
-
-       ST_Buffer(way, 0.0009)::geometry(Polygon, 4326) AS geom
-
-FROM public.planet_osm_roads
-
-WHERE military IS NOT NULL OR building = \'military\' OR landuse = \'military\';
-
- 
-
-*\--*
-
-SELECT 9252 Query returned successfully in 12 secs 151 ms. 
+<script src="https://gist.github.com/kloba/882a40179ba66d7d218ab8ef9a306fd7.js"></script>
 
 Executing the provided SQL script will allow us to create a
 **military_geometries** table that will contain polygons for 9,252
@@ -176,7 +112,7 @@ height="5.922916666666667in"}
 Deleted after 01/01/2022 (blue) and existing (red) geographical polygons
 of military facilities in moscow
 
-## Second data source: fire data from NASA satellites {#second-data-source-fire-data-from-nasa-satellites .list-paragraph}
+### Second data source: fire data from NASA satellites
 
 As the next data source, we will utilize information from the [Fire
 Information for Resource Management
@@ -196,153 +132,7 @@ following script, extracting all records of fires in russia from January
 1, 2022, to the current date. These data will then be imported into a
 new table, **viirs_fire_events**, in the PostgreSQL database.
 
-from datetime import datetime, timedelta
-
-import time
-
-import requests
-
-import psycopg2
-
-import csv
-
-from psycopg2.extras import execute_values
-
- 
-
-*# Your NASA FIRMS API key*
-
-api_key = \'your_api_key\'
-
- 
-
-*# Start and end dates for the data retrieval*
-
-start_date = datetime(2022, 1, 1)
-
-end_date = datetime(2023, 12, 24)
-
- 
-
-*# URL for the NASA FIRMS API call*
-
-base_url = \"https://firms.modaps.eosdis.nasa.gov/api/country/csv/{}/VIIRS_NOAA20_NRT/RUS/1/{}\"
-
- 
-
-*# Database connection details*
-
-db_name = \'your_db_name\'
-
-db_user = \'your_db_user\'
-
-db_password = \'your_db_password\'
-
-db_host = \'your_db_host\'
-
-db_port = \'your_db_port\'
-
- 
-
-*# Function to insert data into PostgreSQL*
-
-def insert_data_into_db(data, cursor):
-
-    insert_query = \"\"\"INSERT INTO viirs_fire_events (country_id, latitude, longitude, bright_ti4, scan, track, acq_date, acq_time, satellite, instrument, confidence, version, bright_ti5, frp, daynight) VALUES %s;\"\"\"
-
-    execute_values(cursor, insert_query, data)
-
- 
-
-*# Function to fetch and insert data into the database*
-
-def fetch_and_insert_data(date, cursor):
-
-    formatted_date = date.strftime(\"%Y-%m-%d\")
-
-    try:
-
-        response = requests.get(base_url.format(api_key, formatted_date))
-
-        
-
-        if \"Invalid MAP_KEY\" in response.text:
-
-            print(f\"Invalid MAP_KEY detected for {formatted_date}. Waiting for 10 minutes before retrying.\")
-
-            time.sleep(600)  *# Wait for 10 minutes*
-
-            return fetch_and_insert_data(date, cursor)  *# Retry*
-
- 
-
-        decoded_content = response.content.decode(\'utf-8\')
-
-        csv_reader = csv.reader(decoded_content.splitlines(), delimiter=\',\')
-
-        next(csv_reader, None)  *# Skip the header*
-
-        rows = \[tuple(row) for row in csv_reader if row\]
-
- 
-
-        if rows:
-
-            insert_data_into_db(rows, cursor)
-
-            print(f\"Data for {formatted_date} inserted successfully (rows = {len(rows)}).\")
-
-        else:
-
-            print(f\"No valid data to insert for {formatted_date}.\")
-
- 
-
-    except Exception as e:
-
-        *# General exception handler for any other unexpected errors*
-
-        print(f\"Error fetching data for {formatted_date}: {e}\")
-
- 
-
-try:
-
-    conn = psycopg2.connect(dbname=db_name, user=db_user, password=db_password, host=db_host, port=db_port)
-
-    cur = conn.cursor()
-
- 
-
-    current_date = start_date
-
-    while current_date \<= end_date:
-
-        fetch_and_insert_data(current_date, cur)
-
-        conn.commit()
-
-        current_date += timedelta(days=1)
-
-    
-
-except Exception as e:
-
-    print(f\"Database error: {e}\")
-
-finally:
-
-    if cur is not None:
-
-        cur.close()
-
-    if conn is not None:
-
-        conn.close()
-
- 
-
-print(\"Data fetching and insertion complete.\")
+<script src="https://gist.github.com/kloba/8c64099f4286fd3275b7a9604e5b9128.js"></script>
 
 Therefore, we will populate the **viirs_fire_events** table, which will
 contain 1,711,475 records of fires in russia. These fires appear as
@@ -360,41 +150,7 @@ new column with a data type of **GEOMETRY(POINT, 4326)** will be
 automatically populated based on the data from the **longitude** and
 **latitude** columns.
 
-CREATE TABLE viirs_fire_events (
-
-    country_id TEXT,
-
-    latitude FLOAT,
-
-    longitude FLOAT,
-
-    bright_ti4 FLOAT,
-
-    scan FLOAT,
-
-    track FLOAT,
-
-    acq_date DATE,
-
-    acq_time INT,
-
-    satellite TEXT,
-
-    instrument TEXT,
-
-    confidence TEXT,
-
-    version TEXT,
-
-    bright_ti5 FLOAT,
-
-    frp FLOAT,
-
-    daynight TEXT,
-
-    geom GEOMETRY(POINT, 4326) GENERATED ALWAYS AS (ST_MakePoint(longitude, latitude)) STORED
-
-); 
+<script src="https://gist.github.com/kloba/14a295808b1173044ef2ace4465fb5f4.js"></script>
 
 Suppose you are interested in working with this data on military objects
 and fires, but the described process of extracting datasets seems
@@ -403,7 +159,7 @@ can download them via the following links:
 [military_geometries](https://storage.googleapis.com/files.sql.ua/csv/military_geometries.csv),
 [viirs_fire_events](https://storage.googleapis.com/files.sql.ua/csv/viirs_fire_events.csv).
 
-## Searching for military facilities where fires occurred: points within the polygon {#searching-for-military-facilities-where-fires-occurred-points-within-the-polygon .list-paragraph}
+### Searching for military facilities where fires occurred: points within the polygon
 
 As for now, we have two tables: **military_geometries** and
 **viirs_fire_events**. Let\'s try to find those military facilities that
@@ -418,37 +174,7 @@ Let\'s use an SQL query with the
 identify military objects where fires have been detected from NASA
 satellites.
 
-SELECT mg.osm_id, 
-
-    mg.geom_type, 
-
-    mg.landuse, 
-
-    mg.military, 
-
-    mg.building, 
-
-    mg.name, 
-
-    mg.operator, 
-
-    mg.geom
-
-FROM public.military_geometries AS mg
-
-WHERE EXISTS (
-
-    SELECT 1
-
-    FROM public.viirs_fire_events AS vfe
-
-    WHERE ST_Contains(mg.geom, vfe.geom)
-
-);
-
-*\--*
-
-Successfully run. Total query runtime: 54 min 15 secs. 129 rows affected. 
+<script src="https://gist.github.com/kloba/49609e30b2b736c4d758c26c11fea068.js"></script>
 
 As you\'ve probably noticed, we\'ve identified 129 military sites that
 have experienced fires since the start of 2022. What\'s intriguing is
@@ -469,21 +195,7 @@ command to understand the reasons for this duration. This command allows
 you to analyze the query execution process, identify potential
 bottlenecks, and further optimize the query to improve performance.
 
-Nested Loop Semi Join  (cost=0.00..395827843592.52 rows=8 width=524) (actual time=4628.471..4005790.130rows=129 loops=1)
-
-  Join Filter: st_contains(mg.geom, vfe.geom)
-
-  Rows Removed by Join Filter: 15695214562
-
-  -\>  Seq Scan on military_geometries mg  (cost=0.00..649.52 rows=9252 width=524) (actual time=0.009..22.516rows=9252 loops=1)
-
-  -\>  Materialize  (cost=0.00..70285.12 rows=1711475 width=32) (actual time=0.015..121.310 rows=1696413loops=9252)
-
-        -\>  Seq Scan on viirs_fire_events vfe  (cost=0.00..50027.75 rows=1711475 width=32) (actual time=124.339..351.922 rows=1711475 loops=1)
-
-Planning Time: 0.923 ms
-
-Execution Time: 4005798.854 ms 
+<script src="https://gist.github.com/kloba/5865856dae4e0995bcf00967394d2d50.js"></script>
 
 In this case, when using the **Nested Loop Semi Join** operator, we
 encountered a complexity of O(n\*m), where n is 9,252 rows in the
@@ -495,32 +207,14 @@ number of operations.
 Hence, let\'s discuss how we can speed up the execution of such a query
 by utilizing indexes.
 
-## Productivity boost: utilizing indexing in geoanalytics {#productivity-boost-utilizing-indexing-in-geoanalytics .list-paragraph}
+### Productivity boost: utilizing indexing in geoanalytics 
 
 PostgreSQL is renowned for its scalability features, offering numerous
 methods for accessing geospatial data within this database. To find all
 methods suitable for working with points in a two-dimensional space, we
 can execute the following query:
 
-SELECT am.amname AS access_method, typ.typname, opc.opcname AS operator_class 
-
-FROM pg_am am
-
-INNER JOIN pg_opclass opc ON am.oid = opc.opcmethod
-
-INNER JOIN pg_type typ ON typ.oid = opc.opcintype
-
-WHERE (opc.opcname LIKE \'%geometry%\' OR opc.opcname LIKE \'%point%\')
-
-AND (
-
-    opc.opcname NOT LIKE \'%3d%\' AND
-
-    opc.opcname NOT LIKE \'%4d%\' AND
-
-    opc.opcname NOT LIKE \'%nd%\'
-
-); 
+<script src="https://gist.github.com/kloba/fc87c4192c371f543a811691c6ea921c.js"></script>
 
 As a result, we will observe at least five access methods, including
 btree, hash, gist, brin, and spgist. I suggest investigating by creating
@@ -622,7 +316,7 @@ The results table shows that the most effective indexes for our task are
 [SP-GiST](https://www.postgresql.org/docs/current/spgist.html). Let\'s
 delve into how they operate.
 
-## How GiST works {#how-gist-works .list-paragraph}
+### How GiST works 
 
 Generalized Search Tree (GiST) indexes in PostgreSQL enable efficient
 sorting and searching across diverse data types using the concept of
@@ -643,7 +337,7 @@ structure, allowing for significantly faster search. Unlike B-trees,
 GiST supports overlap operations and spatial relationship determination.
 This is why GiST is well-suited for indexing geometric data.
 
-## How SP-GiST works {#how-sp-gist-works .list-paragraph}
+### How SP-GiST works 
 
 Space Partitioning Generalized Search Tree (SP-GiST) indexes in
 PostgreSQL are designed for data structures that partition space into
@@ -660,7 +354,7 @@ especially in large databases.
 Considering this, GiST indexes often become a better choice, especially
 when working with polygons and complex spatial structures.
 
-## Finding the nearest neighbors: 10 fires near the Shahed production plant {#finding-the-nearest-neighbors-10-fires-near-the-shahed-production-plant .list-paragraph}
+### Finding the nearest neighbors: 10 fires near the Shahed production plant 
 
 Now, let\'s attempt to solve the task of finding nearest neighbors using
 PostgreSQL. Using our datasets, we will try to identify ten fires that
@@ -682,29 +376,7 @@ PostgreSQL, this can be implemented with the following SQL query, which
 forms the buffer and identifies fires that occurred within the specified
 radius from the selected object:
 
-SELECT \*
-
-FROM public.viirs_fire_events
-
-WHERE ST_DWithin(
-
-    geom, 
-
-    ST_SetSRID(ST_MakePoint(52.048470, 55.821688), 4326)::geography, 
-
-    10000 *\-- can be changed to 1000, 5000, 10000, \...*
-
-)
-
-LIMIT 10;
-
- 
-
-*\--*
-
-Successfully run. Total query runtime: 1 secs 157 ms.
-
-10 rows affected. 
+<script src="https://gist.github.com/kloba/44b4f72ebbf45f8e3babd82ef2f04e14.js"></script>
 
 This approach involves gradually expanding the buffer and analyzing the
 results, which can be time-consuming.
@@ -723,63 +395,7 @@ associated with the **gist_geometry_ops_2d** operator class. This will
 help identify the most efficient operators for performing specific
 geospatial operations in the database.
 
-SELECT
-
-    amopopr::regoperator, 
-
-    oprcode::regproc, 
-
-    obj_description(opr.oid, \'pg_operator\') description
-
-FROM pg_am am
-
-INNER JOIN pg_opclass opc ON opcmethod = am.oid
-
-INNER JOIN pg_amop amop ON amopfamily = opcfamily
-
-INNER JOIN pg_operator opr ON opr.oid = amopopr
-
-WHERE amname = \'gist\'
-
-    AND opcname = \'gist_geometry_ops_2d\'
-
-ORDER BY amopstrategy;
-
- 
-
-*\--*
-
- amopopr                \|    oprcode            \| description
-
-*\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--*
-
- \<\<(geometry,geometry)  \| geometry_left         \| Determines if one geometry is left of another
-
- &\<(geometry,geometry)  \| geometry_overleft     \| Checks if one geometry overlaps the left of another
-
- &&(geometry,geometry)  \| geometry_overlaps     \| Checks if two geometries overlap
-
- &\>(geometry,geometry)  \| geometry_overright    \| Determines if one geometry overlaps the right of another
-
- \>\>(geometry,geometry)  \| geometry_right        \| Determines if one geometry is right of another
-
- \~=(geometry,geometry)  \| geometry_same         \| Checks if two geometries are the same
-
- \~(geometry,geometry)   \| geometry_contains     \| Determines if one geometry contains another
-
- @(geometry,geometry)   \| geometry_within       \| Determines if one geometry is within another
-
- &\<\|(geometry,geometry) \| geometry_overbelow    \| Determines if one geometry overlaps below another
-
- \<\<\|(geometry,geometry) \| geometry_below        \| Determines if one geometry is below another
-
- \|\>\>(geometry,geometry) \| geometry_above        \| Determines if one geometry is above another
-
- \|&\>(geometry,geometry) \| geometry_overabove    \| Determines if one geometry overlaps above another
-
- \<-\>(geometry,geometry) \| geometry_distance_centroid \| Calculates centroid distance between geometries
-
- \<#\>(geometry,geometry) \| geometry_distance_box \| Calculates box distance between geometries 
+<script src="https://gist.github.com/kloba/99d7f600c728f184d412d77ce8028fb4.js"></script>
 
 Our GiST index provides extensive capabilities for working with geodata,
 allowing you to determine the spatial location of objects and measure
@@ -787,21 +403,7 @@ distances. The **\<-\>** operator enables sorting objects by proximity
 to a specified point. In this example, we use this operator to identify
 the ten closest fires to the specified location.
 
-SELECT \*
-
-FROM public.viirs_fire_events
-
-ORDER BY geom \<-\> ST_SetSRID(ST_MakePoint(52.048470, 55.821688), 4326)
-
-LIMIT 10;
-
- 
-
-*\--*
-
-Successfully run. Total query runtime: 78 ms.
-
-10 rows affected. 
+<script src="https://gist.github.com/kloba/b3ac9dab240ca834cf20b61016f0da3e.js"></script>
 
 The query turned out to be significantly faster---15 times swifter,
 compared to the previous methodology, and this is without repeated
@@ -810,31 +412,7 @@ confirm that the speed increased due to the use of an index and an
 operator. This way, we\'ll ensure that the index was indeed involved,
 which is the key to improving productivity.
 
-EXPLAIN ANALYZE
-
-SELECT \*
-
-FROM public.viirs_fire_events
-
-ORDER BY geom \<-\> ST_SetSRID(ST_MakePoint(52.048470, 55.821688), 4326)
-
-LIMIT 10;
-
- 
-
-*\--*
-
-QUERY PLAN
-
-Limit  (cost=0.41..14.22 rows=10 width=143) (actual time=0.230..0.254 rows=10 loops=1)
-
-  -\>  Index Scan using idx_viirs_fire_events_geom_gist on viirs_fire_events  (cost=0.41..2363046.98rows=1711475 width=143) (actual time=0.229..0.252 rows=10 loops=1)
-
-        Order By: (geom \<-\> \'0101000020E6100000276BD44334064A4001C287122DE94B40\'::geometry)
-
-Planning Time: 0.105 ms
-
-Execution Time: 0.283 ms 
+<script src="https://gist.github.com/kloba/f6be940d206e4a453ce58f572f0559f3.js"></script>
 
 As we can see, indexes, similar to GiST, extend analytical capabilities
 beyond simple comparisons, enabling the resolution of more complex
@@ -842,7 +420,7 @@ tasks. As demonstrated in this article, open data can be effectively
 utilized for quickly assessing and defining goals on a global scale,
 including evaluating the success of target impact.
 
-## Uber\'s H3: a perspective on geospatial analytics and data aggregation {#ubers-h3-a-perspective-on-geospatial-analytics-and-data-aggregation .list-paragraph}
+### Uber\'s H3: a perspective on geospatial analytics and data aggregation {#ubers-h3-a-perspective-on-geospatial-analytics-and-data-aggregation .list-paragraph}
 
 The H3, developed by Uber, is a hexagonal grid system designed to
 facilitate flexible and efficient distribution of geospatial data. It
@@ -1027,70 +605,17 @@ Additional resources I utilized in preparing this article:
 
 -   [Mastering PostgreSQL by Hans-Jürgen
     Schönig](https://subscription.packtpub.com/book/data/9781800567498/3/ch03lvl1sec19/understanding-postgresql-index-types)
-
 -   [Inside the russian effort to build 6,000 attack drones with Iran's
     help](https://www.washingtonpost.com/investigations/2023/08/17/russia-iran-drone-shahed-alabuga/)
-
 -   [Uber H3. Tables of Cell Statistics Across
     Resolutions](https://h3geo.org/docs/core-library/restable/)
-
 -   [H3-PG Extension. API
     Reference](https://github.com/zachasme/h3-pg/blob/main/docs/api.md)
-
 -   [PostGIS documentation](https://postgis.net/documentation/)
-
 -   [PostGIS in Action, Third Edition by Leo S. Hsu and Regina
     Obe](https://www.amazon.com/PostGIS-Action-Third-Leo-Hsu/dp/1617296694)
 
 While preparing this article, I used an Ubuntu server with the following
 characteristics and configured the PostgreSQL database as follows:
 
-\# DB Version: 16
-
-\# OS Type: linux
-
-\# DB Type: dw
-
-\# Total Memory (RAM): 8 GB
-
-\# CPUs num: 4
-
-\# Connections num: 20
-
-\# Data Storage: ssd
-
-max_connections = 20
-
-shared_buffers = 2 GB
-
-effective_cache_size = 6 GB
-
-maintenance_work_mem = 1 GB
-
-checkpoint_completion_target = 0.9
-
-wal_buffers = 16 MB
-
-default_statistics_target = 500
-
-random_page_cost = 1.1
-
-effective_io_concurrency = 200
-
-work_mem = 26214 kB
-
-huge_pages = off
-
-min_wal_size = 4 GB
-
-max_wal_size = 16 GB
-
-max_worker_processes = 4
-
-max_parallel_workers_per_gather = 2
-
-max_parallel_workers = 4
-
-max_parallel_maintenance_workers = 2
-
-\# Recommendations are generated by pgtune.leopard.in.ua
+<script src="https://gist.github.com/kloba/7670de1d6dc91f337b89897a6829ea88.js"></script>

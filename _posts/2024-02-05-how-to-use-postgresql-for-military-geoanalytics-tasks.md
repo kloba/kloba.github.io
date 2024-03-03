@@ -87,9 +87,8 @@ Executing the provided SQL script will allow us to create a
 military objects identified on OSM:
 
 ![](/imgs/geoanalytics-postgresql/image1.png)
-
-Visualization of 9,252 military sites across russia and the temporarily
-occupied Autonomous Republic of Crimea using QGIS
+_Visualization of 9,252 military sites across russia and the temporarily
+occupied Autonomous Republic of Crimea using QGIS_
 
 In OSM, as in other open sources, information is subject to change. For
 example, from the beginning of 2022, 2,995 military objects in russia
@@ -106,9 +105,8 @@ deleted objects look on a map, illustrating russian attempts to conceal
 essential data.
 
 ![](/imgs/geoanalytics-postgresql/image2.jpeg)
-
-Deleted after 01/01/2022 (blue) and existing (red) geographical polygons
-of military facilities in moscow
+_Deleted after 01/01/2022 (blue) and existing (red) geographical polygons
+of military facilities in moscow_
 
 ## Second data source: fire data from NASA satellites
 
@@ -137,8 +135,7 @@ contain 1,711,475 records of fires in russia. These fires appear as
 follows:
 
 ![](/imgs/geoanalytics-postgresql/image3.jpeg)
-
-Visualization of fires in russia since January 1, 2022 (1,711,475 fires)
+_Visualization of fires in russia since January 1, 2022 (1,711,475 fires)_
 
 The **viirs_fire_events** table in the PostgreSQL database will be used
 to store detailed fire data, with fields for coordinates, satellite
@@ -177,10 +174,9 @@ have experienced fires since the start of 2022. What\'s intriguing is
 that, in some cases, these fires seem to have occurred more than once.
 
 ![](/imgs/geoanalytics-postgresql/image5.png)
-
-Military facilities where fires have occurred since the beginning of
+_Military facilities where fires have occurred since the beginning of
 2022 (the transparency of the facilities indicates the frequency of the
-fire incidents)
+fire incidents)_
 
 The second aspect you may have noticed is that the specified query took
 54 minutes and 15 seconds to execute, which is quite long for such a
@@ -218,93 +214,18 @@ the indexes, we will assess the query performance regarding fires at
 military facilities in russia to determine which methods are most
 effective for our task.
 
-  -----------------------------------------------------------------------------------------------------------------------
-  Index type    Index operator class             Filtering operator     Index      Index   Query       Brief explanation
-                                                                        creation   size    execution   
-                                                                        time               time        
-  ------------- -------------------------------- ---------------------- ---------- ------- ----------- ------------------
-  btree         btree_geometry_ops               There is no            1 sec 918  81 MB   53 min 45   Supports equality
-                                                 corresponding          ms                 sec (129    and range queries;
-                                                 operator---the index                      rows        retrieves data
-                                                 is disregarded for                        affected)   quickly and in an
-                                                 this query.                                           organized manner.
+  | Index type | Index operator class               | Filtering operator       | Index creation time | Index size | Query execution time | Brief explanation                                                                                              |
+|------------|------------------------------------|--------------------------|---------------------|------------|----------------------|---------------------------------------------------------------------------------------------------------------|
+| btree      | btree_geometry_ops                 | There is no corresponding operator---the index is disregarded for this query. | 1 sec 918 ms | 81 MB   | 53 min 45 sec (129 rows affected) | Supports equality and range queries; retrieves data quickly and in an organized manner.                      |
+| hash       | hash_geometry_ops                  | There is no corresponding operator---the index is disregarded for this query. | 3 secs 158 ms | 59 MB   | 53 min 15 sec (129 rows affected) | Fast equality search; not suitable for ordering or range queries.                                             |
+| brin       | brin_geometry_inclusion_ops_2d     | @(geometry,geometry)     | 536 ms              | 0.032 MB  | 28 min 3 sec (129 rows affected)   | Effective for large datasets with naturally ordered data; indexes block ranges rather than individual rows. |
+| gist       | gist_geometry_ops_2d               | @(geometry,geometry)     | 11 secs 659 ms      | 94 MB     | 493 ms (129 rows affected)         | Supports a wide range of queries, including spatial searches for overlap and proximity.                      |
+| spgist     | spgist_geometry_ops_2d             | @(geometry,geometry)     | 6 secs 290 ms       | 78 MB     | 353 ms (129 rows affected)         | Suitable for data with uneven distribution; supports a variety of split tree structures.                     |
+| gist       | point_ops                          | <@(point,polygon)        | 1 secs 426 ms       | 81 MB     | 306 ms (returned 132 records)      | Perfect for point data; supports queries on spatial relationships, such as containment and intersection.    |
+| spgist     | quad_point_ops                     | <@(point,box)            | 4 secs 849 ms       | 77 MB     | 243 ms (173 rows affected)         | Utilizes quadtrees to index point data; effective in specific scenarios of spatial analysis.                 |
+| spgist     | kd_point_ops                       | <@(point,box)            | 5 secs 204 ms       | 93 MB     | 199 ms (173 rows affected)         | Employs kd-trees for multidimensional point data; excellent for finding nearest neighbors.                   |
 
-  hash          hash_geometry_ops                There is no            3 secs 158 59 MB   53 min 15   Fast equality
-                                                 corresponding          ms                 sec (129    search; not
-                                                 operator---the index                      rows        suitable for
-                                                 is disregarded for                        affected)   ordering or range
-                                                 this query.                                           queries.
-
-  brin          brin_geometry_inclusion_ops_2d   @(geometry,geometry)   536 ms     0.032   28 min 3    Effective for
-                                                                                   MB      sec (129    large datasets
-                                                                                           rows        with naturally
-                                                                                           affected)   ordered data;
-                                                                                                       indexes block
-                                                                                                       ranges rather than
-                                                                                                       individual rows.
-
-  gist          gist_geometry_ops_2d             @(geometry,geometry)   11 secs    94 MB   493 ms (129 Supports a wide
-                                                                        659 ms             rows        range of queries,
-                                                                                           affected)   including spatial
-                                                                                                       searches for
-                                                                                                       overlap and
-                                                                                                       proximity.
-
-  spgist        spgist_geometry_ops_2d           @(geometry,geometry)   6 secs 290 78 MB   353 ms (129 Suitable for data
-                                                                        ms                 rows        with uneven
-                                                                                           affected)   distribution;
-                                                                                                       supports a variety
-                                                                                                       of split tree
-                                                                                                       structures.
-
-  The following                                                                                        
-  operator                                                                                             
-  classes do                                                                                           
-  not utilize                                                                                          
-  geometry data                                                                                        
-  types for                                                                                            
-  searching;                                                                                           
-  instead, they                                                                                        
-  work with                                                                                            
-  \<@(point,                                                                                           
-  polygon) and                                                                                         
-  \<@(point,                                                                                           
-  box). As a                                                                                           
-  result, the                                                                                          
-  row counts                                                                                           
-  may not match                                                                                        
-  the output                                                                                           
-  (for example,                                                                                        
-  a complex                                                                                            
-  geographic                                                                                           
-  polygon may                                                                                          
-  have been                                                                                            
-  simplified to                                                                                        
-  a rectangle).                                                                                        
-
-  gist          point_ops                        \<@(point,polygon)     1 secs 426 81 MB   306 ms      Perfect for point
-                                                                        ms                 (returned   data; supports
-                                                                                           132         queries on spatial
-                                                                                           records)    relationships,
-                                                                                                       such as
-                                                                                                       containment and
-                                                                                                       intersection.
-
-  spgist        quad_point_ops                   \<@(point,box)         4 secs 849 77 MB   243 ms (173 Utilizes quadtrees
-                                                                        ms                 rows        to index point
-                                                                                           affected)   data; effective in
-                                                                                                       specific scenarios
-                                                                                                       of spatial
-                                                                                                       analysis.
-
-  spgist        kd_point_ops                     \<@(point,box)         5 secs 204 93 MB   199 ms (173 Employs kd-trees
-                                                                        ms                 rows        for
-                                                                                           affected)   multidimensional
-                                                                                                       point data;
-                                                                                                       excellent for
-                                                                                                       finding nearest
-                                                                                                       neighbors.
-  -----------------------------------------------------------------------------------------------------------------------
+_Note: The operator classes mentioned do not utilize geometry data types for searching; they work with <@(point, polygon) and <@(point, box). As a result, the row counts may not match the output (for example, a complex geographic polygon may have been simplified to a rectangle)._
 
 The results table shows that the most effective indexes for our task are
 [GiST](https://www.postgresql.org/docs/current/gist.html) and
@@ -320,8 +241,7 @@ indexing, making GiST quite versatile and adaptive to specific
 requirements.
 
 ![](/imgs/geoanalytics-postgresql/image6.png)
-
-The hierarchical structure of the GiST index in PostgreSQL \[1\]
+_The hierarchical structure of the GiST index in PostgreSQL \[1\]_
 
 In the example of a GiST tree depicted: at the top level, there are
 **R1** and **R2**, serving as bounding boxes for other elements. **R1**
@@ -376,9 +296,8 @@ This approach involves gradually expanding the buffer and analyzing the
 results, which can be time-consuming.
 
 ![](/imgs/geoanalytics-postgresql/image7.png)
-
-A plant in Tatarstan that produces Shaheds with fire visualization
-within radii of 1.5 and 10 km
+_A plant in Tatarstan that produces Shaheds with fire visualization
+within radii of 1.5 and 10 km_
 
 Various operators supported by GiST indexes can be utilized to optimize
 geospatial queries. To retrieve a list of available operators to use
@@ -423,49 +342,31 @@ tool can be used for data aggregation and solving complex geoanalytical
 tasks.
 
 ![](/imgs/geoanalytics-postgresql/image8.png)
-
-Illustration of the Uber H3 hexagonal grid
+_Illustration of the Uber H3 hexagonal grid_
 
 As you can see in the image, each hexagon serves as a distinct
 geographic unit, simplifying the processing of intricate geoforms into
 uniform segments.
 
-  ------------------------------------------------------------------------------
-  Level            Total number of       Number of hexagons    Number of
-                   objects                                     pentagons
-  ---------------- --------------------- --------------------- -----------------
-  0                122                   110                   12
+| Level | Total number of objects | Number of hexagons | Number of pentagons |
+|-------|-------------------------|--------------------|---------------------|
+| 0     | 122                     | 110                | 12                  |
+| 1     | 842                     | 830                | 12                  |
+| 2     | 5,882                   | 5,870              | 12                  |
+| 3     | 41,162                  | 41,150             | 12                  |
+| 4     | 288,122                 | 288,110            | 12                  |
+| 5     | 2,016,842               | 2,016,830          | 12                  |
+| 6     | 14,117,882              | 14,117,870         | 12                  |
+| 7     | 98,825,162              | 98,825,150         | 12                  |
+| 8     | 691,776,122             | 691,776,110        | 12                  |
+| 9     | 4,842,432,842           | 4,842,432,830      | 12                  |
+| 10    | 33,897,029,882          | 33,897,029,870     | 12                  |
+| 11    | 237,279,209,162         | 237,279,209,150    | 12                  |
+| 12    | 1,660,954,464,122       | 1,660,954,464,110  | 12                  |
+| 13    | 11,626,681,248,842      | 11,626,681,248,830 | 12                  |
+| 14    | 81,386,768,741,882      | 81,386,768,741,870 | 12                  |
+| 15    | 569,707,381,193,162     | 569,707,381,193,150| 12                  |
 
-  1                842                   830                   12
-
-  2                5,882                 5,870                 12
-
-  3                41,162                41,150                12
-
-  4                288,122               288,110               12
-
-  5                2,016,842             2,016,830             12
-
-  6                14,117,882            14,117,870            12
-
-  7                98,825,162            98,825,150            12
-
-  8                691,776,122           691,776,110           12
-
-  9                4,842,432,842         4,842,432,830         12
-
-  10               33,897,029,882        33,897,029,870        12
-
-  11               237,279,209,162       237,279,209,150       12
-
-  12               1,660,954,464,122     1,660,954,464,110     12
-
-  13               11,626,681,248,842    11,626,681,248,830    12
-
-  14               81,386,768,741,882    81,386,768,741,870    12
-
-  15               569,707,381,193,162   569,707,381,193,150   12
-  ------------------------------------------------------------------------------
 
 This is a hierarchical system consisting of 15 levels dividing the
 Earth\'s surface into hexagons. The zero level is divided into 122
@@ -482,59 +383,17 @@ RDS (my acknowledgments to AWS for their support of Ukraine). Once
 you\'ve installed this extension, new functions become accessible.
 Let\'s explore those functions that might be useful for beginners:
 
-  -------------------------------------------------------------------------------
-  Function              Input data       Output data         Description
-  --------------------- ---------------- ------------------- --------------------
-  h3_lat_lng_to_cell    latitude: FLOAT, H3 index: BIGINT    Converts latitude
-                        longitude:                           and longitude
-                        FLOAT,                               coordinates into an
-                        resolution: INT                      H3 index at a
-                                                             specified resolution
-                                                             level.
+| Function             | Input data                           | Output data                          | Description                                                                                      |
+|----------------------|--------------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------|
+| h3_lat_lng_to_cell   | latitude: FLOAT, longitude: FLOAT, resolution: INT | H3 index: BIGINT                     | Converts latitude and longitude coordinates into an H3 index at a specified resolution level.  |
+| h3_cell_to_boundary  | H3 index: BIGINT                     | Array of boundary coordinates: GEOMETRY(POLYGON, 4326) | Transforms an H3 index into a geometric polygon representing the boundaries of a hexagon.     |
+| h3_get_resolution    | H3 index: BIGINT                     | Resolution level: INT                | Returns the resolution level of a given H3 index.                                               |
+| h3_cell_to_parent    | H3 index: BIGINT, desired resolution: INT | Parent H3 index: BIGINT              | Converts an H3 index into its parent index at a higher hierarchy level.                         |
+| h3_cell_to_children  | H3 index: BIGINT, desired resolution: INT | Array of child H3 indexes: SETOF BIGINT | Converts an H3 index into an array of child indices at a lower hierarchy level.               |
+| h3_polygon_to_cells  | geometry: GEOMETRY, resolution: INT  | Array of H3 indexes: SETOF BIGINT    | Transforms a polygon into a set of H3 indices that fully or partially cover the polygon.       |
+| h3_grid_disk         | H3 index: BIGINT, range: INT         | Array of H3 indexes: SETOF BIGINT    | Generates an array of H3 indices representing a hexagonal grid around the central H3 index, forming a "disk" of a defined radius. |
+| h3_compact_cells     | Array of H3 indexes: SETOF BIGINT    | Array of compact H3 indexes: SETOF BIGINT | Consolidates an array of H3 indices, reducing the number of indices covering the same area.   |
 
-  h3_cell_to_boundary   H3 index: BIGINT Array of boundary   Transforms an H3
-                                         coordinates:        index into a
-                                         GEOMETRY(POLYGON,   geometric polygon
-                                         4326)               representing the
-                                                             boundaries of a
-                                                             hexagon.
-
-  h3_get_resolution     H3 index: BIGINT Resolution level:   Returns the
-                                         INT                 resolution level of
-                                                             a given H3 index.
-
-  h3_cell_to_parent     H3 index:        Parent H3 index:    Converts an H3 index
-                        BIGINT, desired  BIGINT              into its parent
-                        resolution: INT                      index at a higher
-                                                             hierarchy level.
-
-  h3_cell_to_children   H3 index:        Array of child      Converts an H3 index
-                        BIGINT, desired  H3 indexes: SETOF   into an array of
-                        resolution: INT  BIGINT              child indices at a
-                                                             lower hierarchy
-                                                             level.
-
-  h3_polygon_to_cells   geometry:        Array               Transforms a polygon
-                        GEOMETRY,        of H3 indexes:      into a set of H3
-                        resolution: INT  SETOF BIGINT        indices that fully
-                                                             or partially cover
-                                                             the polygon.
-
-  h3_grid_disk          H3 index:        Array               Generates an array
-                        BIGINT, range:   of H3 indexes:      of H3 indices
-                        INT              SETOF BIGINT        representing a
-                                                             hexagonal grid
-                                                             around the central
-                                                             H3 index, forming a
-                                                             \"disk\" of a
-                                                             defined radius.
-
-  h3_compact_cells      Array            Array of compact    Consolidates an
-                        of H3 indexes:   H3 indexes: SETOF   array of H3 indices,
-                        SETOF BIGINT     BIGINT              reducing the number
-                                                             of indices covering
-                                                             the same area.
-  -------------------------------------------------------------------------------
 
 To address the first task effectively, we can transform all our polygons
 into arrays of H3 indexes (hexagons) of a specified level. Similarly, we
@@ -548,18 +407,9 @@ results.
 Let\'s examine a few simple H3 functions that will help better
 understand how this works in practice:
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![](/imgs/geoanalytics-postgresql/image9.png)   ![](/imgs/geoanalytics-postgresql/image10.png)   ![](/imgs/geoanalytics-postgresql/image11.png)
-                                                                                                                                                                  
-  --------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------
-  h3_polygon_to_cells(geom, 8)                                                                  h3_grid_disk(h3_polygon_to_cells(geom, 8), 1)                                                   h3_polygon_to_cells(geom, 9)
-
-  This function converts the geometry of a military polygon into a set of H3 indexes at the     If certain areas of the polygon remain uncovered after applying h3_polygon_to_cells, you can    Using the **h3_polygon_to_cells** function with a level 9 increases the grid\'s resolution to
-  eighth level of resolution, effectively dividing the polygon into hexagons, each covering an  use h3_grid_disk to create an additional ring of H3 indexes. It will expand coverage by adding  a finer scale, where each hexagon represents an area of 0.105332513 square kilometers. This
-  area of 0.737327598 square kilometers, enabling detailed spatial analysis.                    hexagons around existing indexes, ensuring complete coverage of the defined geographic polygon. allows for greater accuracy in reproducing the geometry of the geographic polygon for detailed
-                                                                                                                                                                                                spatial analysis. However, it also results in more hexagons, which may negatively impact query
-                                                                                                                                                                                                execution speed.
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| ![Image 1](/imgs/geoanalytics-postgresql/image9.png) | ![Image 2](/imgs/geoanalytics-postgresql/image10.png) | ![Image 3](/imgs/geoanalytics-postgresql/image11.png) |
+|------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
+| **h3_polygon_to_cells(geom, 8)**<br>This function converts the geometry of a military polygon into a set of H3 indexes at the eighth level of resolution, effectively dividing the polygon into hexagons, each covering an area of 0.737327598 square kilometers, enabling detailed spatial analysis. | **h3_grid_disk(h3_polygon_to_cells(geom, 8), 1)**<br>If certain areas of the polygon remain uncovered after applying h3_polygon_to_cells, you can use h3_grid_disk to create an additional ring of H3 indexes. It will expand coverage by adding hexagons around existing indexes, ensuring complete coverage of the defined geographic polygon. | **h3_polygon_to_cells(geom, 9)**<br>Using the **h3_polygon_to_cells** function with a level 9 increases the grid's resolution to a finer scale, where each hexagon represents an area of 0.105332513 square kilometers. This allows for greater accuracy in reproducing the geometry of the geographic polygon for detailed spatial analysis. However, it also results in more hexagons, which may negatively impact query execution speed. |
 
 During my presentation at PGConf.2023, the largest conference in Europe
 dedicated to PostgreSQL, I had the opportunity to showcase a series of

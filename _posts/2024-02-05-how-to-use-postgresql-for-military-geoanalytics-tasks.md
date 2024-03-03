@@ -86,7 +86,7 @@ Executing the provided SQL script will allow us to create a
 **military_geometries** table that will contain polygons for 9,252
 military objects identified on OSM:
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image1.png){width="6.487048337707787in"
+![](/imgs/geoanalytics-postgresql/image1.png){width="6.487048337707787in"
 height="4.524868766404199in"}
 
 Visualization of 9,252 military sites across russia and the temporarily
@@ -106,7 +106,7 @@ doesn\'t directly relate to our analysis, I want to show how these
 deleted objects look on a map, illustrating russian attempts to conceal
 essential data.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image2.jpeg){width="6.875in"
+![](/imgs/geoanalytics-postgresql/image2.jpeg){width="6.875in"
 height="5.922916666666667in"}
 
 Deleted after 01/01/2022 (blue) and existing (red) geographical polygons
@@ -138,7 +138,7 @@ Therefore, we will populate the **viirs_fire_events** table, which will
 contain 1,711,475 records of fires in russia. These fires appear as
 follows:
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image3.jpeg){width="6.881944444444445in"
+![](/imgs/geoanalytics-postgresql/image3.jpeg){width="6.881944444444445in"
 height="3.3541666666666665in"}
 
 Visualization of fires in russia since January 1, 2022 (1,711,475 fires)
@@ -166,7 +166,7 @@ As for now, we have two tables: **military_geometries** and
 have had fires (since the beginning of 2022) or those that have not yet
 🙂.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image4.png){width="2.1411439195100614in"
+![](/imgs/geoanalytics-postgresql/image4.png){width="2.1411439195100614in"
 height="7.033333333333333in"}
 
 Let\'s use an SQL query with the
@@ -180,7 +180,7 @@ As you\'ve probably noticed, we\'ve identified 129 military sites that
 have experienced fires since the start of 2022. What\'s intriguing is
 that, in some cases, these fires seem to have occurred more than once.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image5.png){width="7.013320209973753in"
+![](/imgs/geoanalytics-postgresql/image5.png){width="7.013320209973753in"
 height="2.8860126859142605in"}
 
 Military facilities where fires have occurred since the beginning of
@@ -324,7 +324,7 @@ balanced trees. They provide the ability to develop custom operators for
 indexing, making GiST quite versatile and adaptive to specific
 requirements.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image6.png){width="6.9in"
+![](/imgs/geoanalytics-postgresql/image6.png){width="6.9in"
 height="5.945138888888889in"}
 
 The hierarchical structure of the GiST index in PostgreSQL \[1\]
@@ -381,7 +381,7 @@ radius from the selected object:
 This approach involves gradually expanding the buffer and analyzing the
 results, which can be time-consuming.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image7.png){width="6.901715879265092in"
+![](/imgs/geoanalytics-postgresql/image7.png){width="6.901715879265092in"
 height="4.993055555555555in"}
 
 A plant in Tatarstan that produces Shaheds with fire visualization
@@ -429,7 +429,7 @@ with geodata in the Armed Forces of Ukraine. Let\'s explore how this
 tool can be used for data aggregation and solving complex geoanalytical
 tasks.
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image8.png){width="4.674759405074366in"
+![](/imgs/geoanalytics-postgresql/image8.png){width="4.674759405074366in"
 height="4.465277777777778in"}
 
 Illustration of the Uber H3 hexagonal grid
@@ -557,7 +557,7 @@ Let\'s examine a few simple H3 functions that will help better
 understand how this works in practice:
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![](vertopal_a1e72a670f354d72936e84f733154302/media/image9.png){width="2.175068897637795in"   ![](vertopal_a1e72a670f354d72936e84f733154302/media/image10.png){width="2.3154615048118985in"   ![](vertopal_a1e72a670f354d72936e84f733154302/media/image11.png){width="2.308632983377078in"
+  ![](/imgs/geoanalytics-postgresql/image9.png){width="2.175068897637795in"   ![](/imgs/geoanalytics-postgresql/image10.png){width="2.3154615048118985in"   ![](/imgs/geoanalytics-postgresql/image11.png){width="2.308632983377078in"
   height="2.6in"}                                                                               height="2.6in"}                                                                                 height="2.6in"}
   --------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------
   h3_polygon_to_cells(geom, 8)                                                                  h3_grid_disk(h3_polygon_to_cells(geom, 8), 1)                                                   h3_polygon_to_cells(geom, 9)
@@ -584,7 +584,7 @@ Within our datasets, we can analyze military objects and, through
 aggregation with H3, calculate the density of these objects in russia.
 The visualization of this analysis looks like this:
 
-![](vertopal_a1e72a670f354d72936e84f733154302/media/image12.png){width="6.888888888888889in"
+![](/imgs/geoanalytics-postgresql/image12.png){width="6.888888888888889in"
 height="4.221579177602799in"}
 
 Visualization of the density of military objects in russia and the

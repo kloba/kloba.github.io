@@ -3,22 +3,6 @@ layout: post
 title: How to use PostgreSQL for (military) geoanalytics tasks 
 ---
 
-I am [Taras Kloba](https://www.linkedin.com/in/kloba/), Associate
-Director, Big Data & Analytics at SoftServe. I am also a co-founder of
-the [PostgreSQL Ukraine
-Community](https://www.facebook.com/groups/postgresql.ua/) and the
-military-tech volunteer [Corvus Intelligence
-project](https://corvusintell.com/), which leverages technology to
-enhance our country\'s defense capabilities, particularly in
-intelligence operations.
-
-Our team won the National Defense Hackathon organized by the National
-Security and Defense Council of Ukraine, and we also tackled one of the
-[NATO TIDE Hackathon 2023](https://dou.ua/forums/topic/44001/)
-challenges in Warsaw. My involvement in various projects and initiatives
-has allowed me to gain practical experience in geoanalytics, which I am
-to share in this publication.
-
 Geoanalytics is crucial in military affairs, as a significant portion of
 military data contains geoattributes. In this article, I will discuss
 how to use PostgreSQL to process geospatial data and address common
@@ -427,9 +411,8 @@ aggregation with H3, calculate the density of these objects in russia.
 The visualization of this analysis looks like this:
 
 ![](/imgs/geoanalytics-postgresql/image12.png)
-
-Visualization of the density of military objects in russia and the
-temporarily occupied Autonomous Republic of Crimea using H3 hexagons
+_Visualization of the density of military objects in russia and the
+temporarily occupied Autonomous Republic of Crimea using H3 hexagons_
 
 Using H3 for aggregating geospatial data significantly enhances
 analytical capabilities, allowing for a more profound interpretation and

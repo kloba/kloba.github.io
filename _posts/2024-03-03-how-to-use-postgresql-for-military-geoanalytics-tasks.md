@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to use PostgreSQL for (military) geoanalytics tasks 
+author: Taras Kloba
 ---
 
 Geoanalytics is crucial in military affairs, as a significant portion of

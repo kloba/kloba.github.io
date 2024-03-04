@@ -317,7 +317,7 @@ tasks. As demonstrated in this article, open data can be effectively
 utilized for quickly assessing and defining goals on a global scale,
 including evaluating the success of target impact.
 
-## Uber\'s H3: a perspective on geospatial analytics and data aggregation {#ubers-h3-a-perspective-on-geospatial-analytics-and-data-aggregation .list-paragraph}
+## Uber\'s H3: a perspective on geospatial analytics and data aggregation
 
 The H3, developed by Uber, is a hexagonal grid system designed to
 facilitate flexible and efficient distribution of geospatial data. It

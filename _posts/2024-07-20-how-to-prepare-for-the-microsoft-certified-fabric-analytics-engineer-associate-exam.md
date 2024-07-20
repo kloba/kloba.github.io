@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Prepare for the Microsoft Certified: Fabric Analytics Engineer Associate Exam
+title: How to Prepare for the Microsoft Certified Fabric Analytics Engineer Associate Exam
 date: 2024-07-20
 ---
 

@@ -4,9 +4,6 @@ title: How to Prepare for the Microsoft Certified: Fabric Analytics Engineer Ass
 date: 2024-07-20
 ---
 
-# How to Prepare for the Microsoft Certified: Fabric Analytics Engineer Associate Exam
-
-## About the Certification
 The Microsoft Certified: Fabric Analytics Engineer Associate certification validates your ability to design, implement, and manage data analytics solutions using Microsoft Fabric. It covers areas such as data engineering, data modeling, performance optimization, and data warehousing, making it ideal for professionals seeking to demonstrate their expertise in enterprise-scale analytics solutions.
 
 ## Recommended Path to Prepare in a Short Term
